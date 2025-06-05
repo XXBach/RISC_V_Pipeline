@@ -1,0 +1,19 @@
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Instruction_Fetch_behav xil_defaultlib.Instruction_Fetch xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3129] assignment to input 'accumulated_addr' [D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sources_1/new/Instruction_Fetch.v:57]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Mux2_to_1(DATA_WIDTH=16)
+Compiling module xil_defaultlib.PC(ADDR_WIDTH=16)
+Compiling module xil_defaultlib.Acc(DATA_WIDTH=16)
+Compiling module xil_defaultlib.IMEM
+Compiling module xil_defaultlib.Instruction_Fetch
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Instruction_Fetch_behav

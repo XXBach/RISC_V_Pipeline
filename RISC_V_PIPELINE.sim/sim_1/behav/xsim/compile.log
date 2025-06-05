@@ -1,0 +1,12 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sources_1/new/Acc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Acc
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sources_1/new/IMEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IMEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sources_1/new/Mux2_to_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux2_to_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sources_1/new/Instruction_Fetch.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instruction_Fetch
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

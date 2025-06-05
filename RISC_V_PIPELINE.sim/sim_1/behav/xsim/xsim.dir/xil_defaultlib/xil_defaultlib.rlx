@@ -1,0 +1,10 @@
+0.7
+2020.2
+Oct 13 2023
+20:47:58
+D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.sim/sim_1/behav/xsim/glbl.v,1697210495,verilog,,,,glbl,,,,,,,,
+D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sources_1/new/Acc.v,1744726242,verilog,,D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sources_1/new/IMEM.v,,Acc,,,,,,,,
+D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sources_1/new/IMEM.v,1744727606,verilog,,D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sources_1/new/Mux2_to_1.v,,IMEM,,,,,,,,
+D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sources_1/new/Instruction_Fetch.v,1744726979,verilog,,,,Instruction_Fetch,,,,,,,,
+D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sources_1/new/Mux2_to_1.v,1744726231,verilog,,D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sources_1/new/PC.v,,Mux2_to_1,,,,,,,,
+D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sources_1/new/PC.v,1744726221,verilog,,D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sources_1/new/Instruction_Fetch.v,,PC,,,,,,,,
