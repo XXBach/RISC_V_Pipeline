@@ -42,11 +42,13 @@ This architecture will be pipelined to 5 simple stages, those are Instruction Fe
 
 The testbench contains of many classes that is briefly explained below:
 
-• The first part is an interface. Think of it like a bus that connects testbench and design. With the existence of the interface, I can sample and drive data from/to input/output as well as sample inner design data for Assertion module.
+• The first part is an interface. Think of it like a bus that connects testbench and design. With the existence of the interface, I can sample and drive data from/to input/output as well as sample inner design data for Assertion class.
 
-. The basic but most importent part of this testbench is Transactions. 
+• The basic but most importent part of this testbench is Transactions. Think of these classes like how you can modularization the existence of 1 instruction. In this project, I am inteded to write Transactions for all types of Instruction since I get to control the propability of each time a certain instruction from a type exist, from there I could learn how to manage a functional coverage effectively. I also learn how to inject errors intentionally to Transactions classes. 
 
-............. Coming soon
+• The testbench still contains many classes that are written at the Router project like Generator which generate data from probabilities, using transactions class, Agent which packed a list of instructions into memory file, Driver which put the memory file into Instruction Memory, Monitor which sample the outputs and put them into sets, Checker which compare the outputs sampled to the expected ones, i'm currently intended to use scoreboard to keep record of which instruction set is executed right and which is wrong but doing this require a method to score so in the mean time i'm not doing it. 
+
+• The classes that are new are Assertion class and Functional Coverage class. Assertion class receive inner design signals from interface certain modport and then raise error or warning depend on the severity of the problem if had. The Functional Coverage intended to take record from scoreboard, calculate the coverage and then demand which parameter needs to be adjust to increase the coverage, but like Scoreboard, it needs some sort of method to calculate a score and Vivado 2024.1 doesn't allow me to fully use SystemVerilog's functions to design the class so this class will not be use until I can find a better way to do it.   
 
 # Non-technical note
 
