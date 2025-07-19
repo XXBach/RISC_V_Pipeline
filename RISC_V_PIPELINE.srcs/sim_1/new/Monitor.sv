@@ -21,21 +21,21 @@
 
 
 typedef class RISCV_OUTPUTS;
+typedef mailbox #(RISCV_OUTPUTS) OPS_mbox; 
 class Monitor;
     virtual RISCV_IO.Test rsc_io;
     string name;
     bit [1:0] status;
     int run_for_n_instructions;
-    RISCV_OUTPUTS out_box = new();
+    OPS_mbox out_box = new();
     
-    extern function new(string name = "Monitor", virtual RISCV_IO.Test rsc_io = null, RISCV_OUTPUTS out_box, int run_for_n_instructions);
+    extern function new(string name = "Monitor", virtual RISCV_IO.Test rsc_io = null, int run_for_n_instructions);
     extern task Start();
     extern function void display();
 endclass: Monitor
-    function Monitor::new(string name, virtual RISCV_IO.Test rsc_io, RISCV_OUTPUTS out_box, int run_for_n_instructions);
+    function Monitor::new(string name, virtual RISCV_IO.Test rsc_io, int run_for_n_instructions);
         this.name = name;
         this.rsc_io = rsc_io;
-        this.out_box = out_box;
         this.run_for_n_instructions = run_for_n_instructions;
     endfunction: new
     
@@ -53,14 +53,22 @@ endclass: Monitor
             @(posedge rsc_io.RISCV_cb);
             PC2P.push_front(rsc_io.RISCV_cb.Current_PC);
             instruction2P.push_front(rsc_io.RISCV_cb.instruction);
+            this.status = 2'b00;
+            this.display();
             @(posedge rsc_io.RISCV_cb);
             data_r_0_2P.push_front(rsc_io.RISCV_cb.data_r_0);
             data_r_1_2P.push_front(rsc_io.RISCV_cb.data_r_1);
             imm_out2P.push_front(rsc_io.RISCV_cb.imm_out);
+            this.status = 2'b01;
+            this.display();
             @(posedge rsc_io.RISCV_cb);
             ALU_Result_2P.push_front(rsc_io.RISCV_cb.ALU_Result);
+            this.status = 2'b10;
+            this.display();
             repeat(2)@(posedge rsc_io.RISCV_cb);
             WB_Output_2P.push_front(rsc_io.RISCV_cb.WB_Output);
+            this.status = 2'b11;
+            this.display();
             if(i >= 5) begin
                 opt.ID = i - 5;
                 opt.Current_PC = PC2P.pop_back();
@@ -72,6 +80,7 @@ endclass: Monitor
                 opt.WB_Output = WB_Output_2P.pop_back();
                 opt2C = new(i - 5);
                 opt2C = opt.copy();
+                opt2C.display();
                 out_box.put(opt2C);
             end
             else continue;

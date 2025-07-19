@@ -29,6 +29,7 @@ class Agent;
     extern function void makefile(string filename = "instruction0.mem");
     extern function void display();
 endclass:Agent
+
 function Agent::new(string name, Instr_mbox in_box);
     this.name = name;
     this.in_box = in_box;

@@ -19,13 +19,6 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-//typedef class I_Type_Transaction;
-//typedef class B_Type_Transaction;
-//typedef class J_Type_Transaction;
-//typedef class S_Type_Transaction;
-//typedef class R_Type_Transaction;
-//typedef class UI_Inst_Transaction;
-//typedef class JALR_Inst_Transaction;
 typedef class instr;
 
 `include "I_Type_Transaction.sv"
@@ -48,22 +41,19 @@ typedef enum int {
 typedef mailbox #(instr) Instr_mbox;
 class Generator;
     string name;
-    rand int run_for_n_instructions;
+    int run_for_n_instructions;
     bit status = 0;
     Instr_TYPE instruction_Type = new(0);
     Instr_mbox out_box;
     
-    constraint run_cstr {
-        run_for_n_instructions inside {1,1024};
-    };
-
-    extern function new (string name = "GEN");
+    extern function new (string name = "GEN", int run_for_n_instructions = 1024);
     extern function start ();
     extern function void display (int instruction_n);
 endclass: Generator
 
-function Generator::new(string name);
+function Generator::new(string name, int run_for_n_instructions);
     this.name = name;
+    this.run_for_n_instructions = run_for_n_instructions;
 endfunction: new
 
 function Generator::display(int instruction_n);
@@ -79,6 +69,7 @@ function Generator::start();
         this.display(i);
         instruction_Type.ID = i;
         assert(instruction_Type.randomize());
+        instruction_Type.display("success");
         case(instruction_Type.instr_Type)
             0: begin
                 R_Type_Transaction R_Transact;
@@ -157,6 +148,11 @@ function Generator::start();
                 instr_mb = instruction.copy();
                 out_box.put(instr_mb);               
             end
+            default: begin
+                status = 0;
+                this.display(i);
+                break;
+            end
         endcase
     end
 endfunction: start
@@ -165,7 +161,7 @@ endfunction: start
 class Instr_TYPE;
     int ID;
     rand instr_num instr_Type;
-    int R_wt = 3, I_wt = 3, J_wt = 1, S_wt = 2, B_wt = 1, UI_wt = 1, JALR_wt = 1;
+    int R_wt, I_wt, J_wt, S_wt, B_wt, UI_wt, JALR_wt;
     
     constraint generate_dist_cstr{
     instr_Type dist {R_Type := R_wt,
@@ -176,13 +172,20 @@ class Instr_TYPE;
                      UI_Instr := UI_wt,
                      JALR := JALR_wt};
     };
-    extern function new (int ID);
+    extern function new (int ID, int R_wt, int I_wt, int J_wt, int S_wt, int B_wt, int UI_wt, int JALR_wt);
     extern function void display ( string prefix );
     extern function Instr_Type copy();
 endclass: Instr_TYPE
 
-function Instr_TYPE::new(int ID);
+function Instr_TYPE::new(int ID, int R_wt, int I_wt, int J_wt, int S_wt, int B_wt, int UI_wt, int JALR_wt);
     this.ID = ID;
+    this.R_wt = R_wt;
+    this.I_wt = I_wt;
+    this.J_wt = J_wt;
+    this.S_wt = S_wt;
+    this.B_wt = B_wt;
+    this.UI_wt = UI_wt;
+    this.JALR_wt = JALR_wt;
 endfunction: new
 
 function void Instr_TYPE::display(string prefix);
@@ -190,7 +193,7 @@ function void Instr_TYPE::display(string prefix);
 endfunction: display
 
 function Instr_TYPE Instr_TYPE::copy();
-    Instr_TYPE Type2C = new(this.ID);
+    Instr_TYPE Type2C = new(this.ID, this.R_wt, this.I_wt, this.J_wt, this.S_wt, this.B_wt, this.UI_wt, this.JALR_wt);
     Type2C.instr_Type = this.instr_Type;
     Type2C.R_wt = this.R_wt;
     Type2C.I_wt = this.I_wt;

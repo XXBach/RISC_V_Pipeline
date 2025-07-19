@@ -20,6 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 `include "Generator.sv"
+`include "Agent.sv"
 typedef class instr;
 class Driver;
     virtual RISCV_IO.Test rsc_io;
@@ -27,7 +28,7 @@ class Driver;
     bit [1:0] status;
     
     extern function new(string name = "Driver", virtual RISCV_IO.Test rsc_io = null);
-    extern task Start();
+    extern task Start(int run_for_n_instructions);
     extern function void display();
 endclass: Driver
     function Driver::new(string name, virtual RISCV_IO.Test rsc_io);
@@ -36,26 +37,30 @@ endclass: Driver
     endfunction: new
     
     
-    task Driver::Start();
+    task Driver::Start(int run_for_n_instructions);
         //Phase 1: Reset
         rsc_io.reset = 0;
         rsc_io.RISCV_cb.start = 0;
         rsc_io.RISCV_cb.IMem_Start = 0;
         this.status = 0;
+        this.display();
         @(posedge rsc_io.RISCV_cb);
         rsc_io.reset = 1;
         this.status = 1;
+        this.display();
         repeat(100) @(negedge rsc_io.RISCV_cb);
         rsc_io.reset = 0;
         //Phase 2: Nap lenh
         rsc_io.RISCV_cb.IMem_Start = 1;
         this.status = 2;
+        this.display();
         repeat(20) @(negedge rsc_io.RISCV_cb);
         rsc_io.RISCV_cb.IMem_Start = 0;
         //Phase 3: Run
         rsc_io.RISCV_cb.start = 1;
         this.status = 3;
-        repeat(1030) @(posedge rsc_io.RISCV_cb);
+        this.display();
+        repeat(run_for_n_instructions) @(posedge rsc_io.RISCV_cb);
         rsc_io.RISCV_cb.start = 0;
     endtask: Start;
     
