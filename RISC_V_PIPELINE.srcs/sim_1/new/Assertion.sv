@@ -48,19 +48,6 @@ endclass: Assertion
     endfunction:new
     task Assertion::running_assertion();
         // Top module internal signals
-        // IF_ID
-        logic prev_Top_PCSel;
-        logic [$clog2(IMM_MODE_NUMS) - 1:0] prev_Top_ImmSel;
-        logic prev_Top_RegWEn;
-        logic prev_Top_BrUn;
-        logic prev_Top_BrEq;
-        logic prev_Top_BrLt;
-        logic prev_Top_ASel;
-        logic prev_Top_BSel;
-        logic [$clog2(OPERATION_NUMS) - 1:0] prev_Top_ALU_Sel;
-        logic prev_Top_MemRW;
-        logic [1:0] prev_Top_WBSel;
-        logic [INSTRUCTION_WIDTH - 1:0] prev_Top_instruction_ctrl;
         //ID_Exe
         logic prev_Top_PCSel_Exe;
         logic prev_Top_RegWEn_Exe;
@@ -81,45 +68,49 @@ endclass: Assertion
         logic prev_Top_PCSel_IF;
         logic prev_Top_RegWEn_IF;
         
-        //Datapath
-        //IF
-        logic [ADDR_WIDTH - 1:0] prev_DTP_accumulated_addr_IF;
-        //IF_ID
-        logic [DATA_WIDTH - 1:0] prev_DTP_ALU_result_ID;
-        logic [INSTRUCTION_WIDTH - 1:0] prev_DTP_instruction;
-        //ID
-        logic [DATA_WIDTH - 1:0] prev_DTP_WB_Output;
-        //ID_Exe
-        logic [ADDR_WIDTH - 1:0] prev_DTP_Current_PC_Exe;
-        logic [ADDR_WIDTH - 1:0] prev_DTP_accumulated_addr_Exe;
-        logic [DATA_WIDTH - 1:0] prev_DTP_rs1;
-        logic [DATA_WIDTH - 1:0] prev_DTP_rs2;
-        logic [DATA_WIDTH - 1:0] prev_DTP_imm_Exe;
-        //Exe_MA
-        logic [DATA_WIDTH - 1:0] prev_DTP_ALU_result_MA;
-        logic [ADDR_WIDTH - 1:0] prev_DTP_accumulated_addr_MA;
-        logic [DATA_WIDTH - 1:0] prev_DTP_Data_W;
-        //MA_WB
-        logic prev_DTP_MemRW;
-        logic [1:0] prev_DTP_WBSel;
-        logic [DATA_WIDTH - 1:0] prev_DTP_WB_Output;
-        
-        //Controller
-        logic [INSTRUCTION_WIDTH - 1:0] prev_CTRL_instruction;
-        logic prev_CTRL_is_ALU; 
         forever begin
             @(posedge rsc_io.clk);
             if(!rsc_io.reset) begin
-                //Controller Assertion
                 //assert(rsc_io.CTRL_instruction_ff == $past(rsc_io.CTRL_instruction));
-                //unable to use $past
-                prev_CTRL_instruction = rsc_io.CTRL_instruction;
-                prev_CTRL_is_ALU = rsc_io.CTRL_is_ALU;
-                assert(rsc_io.CTRL_instruction_ALU == prev_CTRL_instruction) else $error("[%t] Instruction in CTRL failed to transfer to ALU Controller| expected instruction: %b| received instruction: %b", $time, prev_CTRL_instruction, rsc_io.CTRL_instruction_ALU); 
-                assert(rsc_io.CTRL_is_ALU_ff == prev_CTRL_is_ALU) else $error("[%t] is_ALU failed to transfer to ALU Controller| expected signal: %b| received signal: %b", $time, prev_CTRL_is_ALU, rsc_io.CTRL_is_ALU_ff);
+                //unable to use $past in vivado
+                //ID_Exe
+                prev_Top_PCSel_Exe = rsc_io.Top_PCSel;
+                prev_Top_RegWEn_Exe = rsc_io.RegWEn;
+                prev_Top_ASel_Exe = rsc_io.Top_ASel;
+                prev_Top_BSel_Exe = rsc_io.Top_BSel;
+                prev_Top_MemRW_Exe = rsc_io.Top_MemRW;
+                prev_Top_WBSel_Exe = rsc_io.Top_WBSel;
+                assert(rsc_io.Top_PCSel_Exe == prev_Top_PCSel_Exe) else $warning("Fail! PCSel from ID to Exe: Expected: %d, Received: %d", rsc_io.Top_PCSel_Exe, prev_Top_PCSel_Exe);
+                assert(rsc_io.Top_RegWEn_Exe == prev_Top_RegWEn_Exe) else $warning("Fail! RegWEn from ID to Exe: Expected: %d, Received: %d", rsc_io.Top_RegWEn_Exe, prev_Top_RegWEn_Exe);
+                assert(rsc_io.Top_ASel_Exe == prev_Top_ASel_Exe) else $warning("Fail! ASel from ID to Exe: Expected: %d, Received: %d", rsc_io.Top_ASel_Exe, prev_Top_ASel_Exe);
+                assert(rsc_io.Top_BSel_Exe == prev_Top_BSel_Exe) else $warning("Fail! BSel from ID to Exe: Expected: %d, Received: %d", rsc_io.Top_BSel_Exe, prev_Top_BSel_Exe);
+                assert(rsc_io.Top_MemRW_Exe == prev_Top_MemRW_Exe) else $warning("Fail! MemRW from ID to Exe: Expected: %d, Received: %d", rsc_io.Top_MemRW_Exe, prev_Top_MemRW_Exe);
+                assert(rsc_io.Top_WBSel_Exe == prev_Top_WBSel_Exe) else $warning("Fail! WBSel from ID to Exe: Expected: %d, Received: %d", rsc_io.Top_WBSel_Exe, prev_Top_WBSel_Exe);
                 
-                //Datapath Assertion
+                //Exe_MA
+                prev_Top_PCSel_MA = rsc_io.Top_PCSel_Exe;
+                prev_Top_RegWEn_MA = rsc_io.RegWEn_Exe;
+                prev_Top_MemRW_MA = rsc_io.Top_MemRW_Exe;
+                prev_Top_WBSel_MA = rsc_io.Top_WBSel_Exe;
+                assert(rsc_io.Top_PCSel_MA == prev_Top_PCSel_MA) else $warning("Fail! PCSel from Exe to MA: Expected: %d, Received: %d", rsc_io.Top_PCSel_MA, prev_Top_PCSel_MA);
+                assert(rsc_io.Top_RegWEn_MA == prev_Top_RegWEn_MA) else $warning("Fail! RegWEn from Exe to MA: Expected: %d, Received: %d", rsc_io.Top_RegWEn_MA, prev_Top_RegWEn_MA);
+                assert(rsc_io.Top_MemRW_MA == prev_Top_MemRW_MA) else $warning("Fail! MemRW from Exe to MA: Expected: %d, Received: %d", rsc_io.Top_MemRW_MA, prev_Top_MemRW_MA);
+                assert(rsc_io.Top_WBSel_MA == prev_Top_WBSel_MA) else $warning("Fail! WBSel from Exe to MA: Expected: %d, Received: %d", rsc_io.Top_WBSel_MA, prev_Top_WBSel_MA);
                 
+                //MA_WB
+                prev_Top_PCSel_WB = rsc_io.Top_PCSel_MA;
+                prev_Top_RegWEn_WB = rsc_io.RegWEn_MA;
+                prev_Top_WBSel_WB = rsc_io.Top_WBSel_MA;
+                assert(rsc_io.Top_PCSel_WB == prev_Top_PCSel_WB) else $warning("Fail! PCSel from MA to WB: Expected: %d, Received: %d", rsc_io.Top_PCSel_WB, prev_Top_PCSel_WB);
+                assert(rsc_io.Top_RegWEn_WB == prev_Top_RegWEn_WB) else $warning("Fail! RegWEn from MA to WB: Expected: %d, Received: %d", rsc_io.Top_RegWEn_WB, prev_Top_RegWEn_WB);
+                assert(rsc_io.Top_WBSel_WB == prev_Top_WBSel_WB) else $warning("Fail! WBSel from MA to WB: Expected: %d, Received: %d", rsc_io.Top_WBSel_WB, prev_Top_WBSel_WB);
+                
+                //WB_IF
+                prev_Top_PCSel_IF = rsc_io.Top_PCSel_WB;
+                prev_Top_RegWEn_IF = rsc_io.RegWEn_WB;
+                assert(rsc_io.Top_PCSel_IF == prev_Top_PCSel_IF) else $warning("Fail! PCSel from WB to IF: Expected: %d, Received: %d", rsc_io.Top_PCSel_IF, prev_Top_PCSel_IF);
+                assert(rsc_io.Top_RegWEn_IF == prev_Top_RegWEn_IF) else $warning("Fail! RegWEn from WB to IF: Expected: %d, Received: %d", rsc_io.Top_RegWEn_IF, prev_Top_RegWEn_IF);
+            
             end
         end
     endtask:running_assertion    

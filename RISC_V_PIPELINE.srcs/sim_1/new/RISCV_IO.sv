@@ -51,19 +51,19 @@ interface RISCV_IO#(
     logic [DATA_WIDTH - 1:0] WB_Output;
     
     // Top module internal signals
-    // IF_ID
-    logic Top_PCSel;
-    logic [$clog2(IMM_MODE_NUMS) - 1:0] Top_ImmSel;
-    logic Top_RegWEn;
-    logic Top_BrUn;
-    logic Top_BrEq;
-    logic Top_BrLt;
-    logic Top_ASel;
-    logic Top_BSel;
-    logic [$clog2(OPERATION_NUMS) - 1:0] Top_ALU_Sel;
-    logic Top_MemRW;
-    logic [1:0] Top_WBSel;
-    logic [INSTRUCTION_WIDTH - 1:0] Top_instruction_ctrl;
+//    // IF_ID
+//    logic Top_PCSel;
+//    logic [$clog2(IMM_MODE_NUMS) - 1:0] Top_ImmSel;
+//    logic Top_RegWEn;
+//    logic Top_BrUn;
+//    logic Top_BrEq;
+//    logic Top_BrLt;
+//    logic Top_ASel;
+//    logic Top_BSel;
+//    logic [$clog2(OPERATION_NUMS) - 1:0] Top_ALU_Sel;
+//    logic Top_MemRW;
+//    logic [1:0] Top_WBSel;
+//    logic [INSTRUCTION_WIDTH - 1:0] Top_instruction_ctrl;
     //ID_Exe
     logic Top_PCSel_Exe;
     logic Top_RegWEn_Exe;
@@ -84,38 +84,6 @@ interface RISCV_IO#(
     logic Top_PCSel_IF;
     logic Top_RegWEn_IF;
     
-    //Datapath
-    //IF
-    logic [ADDR_WIDTH - 1:0] DTP_accumulated_addr_IF;
-    logic [ADDR_WIDTH - 1:0] DTP_ALU_addr_IF;
-    //IF_ID
-    logic [ADDR_WIDTH - 1:0] DTP_Current_PC_ID;
-    logic [DATA_WIDTH - 1:0] DTP_ALU_result_ID;
-    logic [INSTRUCTION_WIDTH - 1:0] DTP_instruction_ID;
-    logic [ADDR_WIDTH - 1:0] DTP_accumulated_addr_ID;
-    //ID
-    logic [DATA_WIDTH - 1:0] DTP_WB_Output;
-    //ID_Exe
-    logic [ADDR_WIDTH - 1:0] DTP_Current_PC_Exe;
-    logic [ADDR_WIDTH - 1:0] DTP_accumulated_addr_Exe;
-    logic [DATA_WIDTH - 1:0] DTP_rs1;
-    logic [DATA_WIDTH - 1:0] DTP_rs2;
-    logic [DATA_WIDTH - 1:0] DTP_imm_Exe;
-    //Exe_MA
-    logic [DATA_WIDTH - 1:0] DTP_ALU_result_MA;
-    logic [ADDR_WIDTH - 1:0] DTP_accumulated_addr_MA;
-    logic [DATA_WIDTH - 1:0] DTP_Data_W;
-    //MA_WB
-    logic DTP_MemRW;
-    logic [1:0] DTP_WBSel;
-    logic [DATA_WIDTH - 1:0] DTP_WB_Output;
-    
-    //Controller
-    logic [INSTRUCTION_WIDTH - 1:0]CTRL_instruction;
-    logic CTRL_is_ALU_ff;
-    logic CTRL_is_ALU; 
-    logic [INSTRUCTION_WIDTH - 1:0] CTRL_instruction_ALU;
-    
     clocking RISCV_cb @(posedge clock);
         default input #0 output #0;
         output reset;
@@ -133,6 +101,5 @@ interface RISCV_IO#(
      modport DUT(input reset, start, IMem_Start,
                     output Current_PC, instruction, data_r_0,
                     data_r_1, imm_out, ALU_Result, WB_Output);
-     modport Assertion (output reset, start, IMem_Start, Current_PC, instruction, data_r_0,
-                    data_r_1, imm_out, ALU_Result, WB_Output);
+     modport Assertion (output Top_PCSel_Exe, Top_RegWEn_Exe, Top_ASel_Exe, Top_BSel_Exe, Top_MemRW_Exe, Top_WBSel_Exe, Top_PCSel_MA, Top_RegWEn_MA, Top_MemRW_MA, Top_WBSel_MA, Top_PCSel_WB, Top_RegWEn_WB, Top_WBSel_WB, Top_PCSel_IF, Top_RegWEn_IF);
 endinterface: RISCV_IO

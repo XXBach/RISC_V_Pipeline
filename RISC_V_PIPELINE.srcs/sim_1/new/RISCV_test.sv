@@ -22,7 +22,6 @@
 
 program automatic RISCV_test(RISCV_IO.Test RSCV_io);
     int run_for_n_instructions;
-    int TRACE_ON = 0; 
     
     `include "Generator.sv"
     `include "Agent.sv"
@@ -38,6 +37,7 @@ program automatic RISCV_test(RISCV_IO.Test RSCV_io);
     Checker check;
     Assertion srt;
     
+    
     initial begin 
         run_for_n_instructions = 500;
         gen = new("GEN", run_for_n_instructions);
@@ -52,5 +52,6 @@ program automatic RISCV_test(RISCV_IO.Test RSCV_io);
         drvr.Start(run_for_n_instructions);
         mntr.Start();
         check.checking();
+        srt.running_assertion();
     end
 endprogram: RISCV_test
