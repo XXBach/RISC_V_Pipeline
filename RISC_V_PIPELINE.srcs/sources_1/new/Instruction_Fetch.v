@@ -63,7 +63,7 @@ module Instruction_Fetch#(
     )Instruction_mem(
         .clk(clk),
         .reset(reset),
-        .start(IMem_start),
+        .start(IMem_Start),
         .addr(current_addr),
         .instruction(instruction)
     );

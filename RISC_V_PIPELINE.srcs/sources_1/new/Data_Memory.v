@@ -47,14 +47,14 @@ module Data_Memory#(
         begin
             fd = $fopen("DMEM_expose.mem", "w");
             if (fd == 0) begin
-                $display("ERROR: Cannot open file %s for writing!", filename);
+                $display("ERROR: Cannot open file DMEM_expose.mem for writing!");
                 $finish;
             end
             for (i = 0; i < DMEM_DEPTH; i = i + 1) begin
                 $fdisplay(fd, "%b", mem[i]);  // write in binary format
             end
             $fclose(fd);
-            $display("Memory dumped to %s successfully.", filename);
+            $display("Memory dumped to DMEM_expose.mem successfully.");
         end
     endtask
 endmodule

@@ -18,11 +18,12 @@
 // Additional Comments:
 // 
 //////////////////////////////////////////////////////////////////////////////////
-
+`ifndef AGENT
+`define AGENT
 `include "Generator.sv"
 class Agent;
     string name;
-    Instr_mbox in_box = new();
+    Instr_mbox in_box;
     bit status;
     
     extern function new(string name = "Agent", Instr_mbox in_box);
@@ -58,4 +59,5 @@ function void Agent::makefile(string filename);
     $display("[%0t] Instructions successfully saved to file: %s", $time, filename);
     $fclose(filedesc);
 endfunction: makefile
-    
+
+`endif

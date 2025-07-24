@@ -19,7 +19,8 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-
+`ifndef JALR_TRANSACTION
+`define JALR_TRANSACTION
 class JALR_Inst_Transaction;
     //property declaration
     int ID;
@@ -44,7 +45,7 @@ function JALR_Inst_Transaction::new(int ID, bit [6:0] opcode = 7'b1100111, funct
 endfunction: new
     
 function void JALR_Inst_Transaction::display(string prefix);
-    $display("[%0t] Transaction_ID: %i| Instruction: %b| Status: %s", $time, ID, Instruction, prefix);
+    $display("[%0t] Transaction_ID: %d| Instruction: %b| Status: %s", $time, ID, instruction, prefix);
 endfunction: display
 
 function void JALR_Inst_Transaction::post_randomize();
@@ -59,3 +60,4 @@ function JALR_Inst_Transaction JALR_Inst_Transaction::copy();
     Transaction_Copy.imm = this.imm;
     Transaction_Copy.instruction = this.instruction;
 endfunction: copy 
+`endif

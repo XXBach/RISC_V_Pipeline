@@ -19,7 +19,8 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-
+`ifndef MONITOR_OUTPUT_INFO
+`define MONITOR_OUTPUT_INFO
 typedef class RISCV_OUTPUTS;
 typedef mailbox #(RISCV_OUTPUTS) OPS_mbox; 
 class Monitor;
@@ -50,22 +51,22 @@ endclass: Monitor
         RISCV_OUTPUTS opt = new(0);
         RISCV_OUTPUTS opt2C;
         for(int i = 0; i <= run_for_n_instructions; i++) begin
-            @(posedge rsc_io.RISCV_cb);
+            @(rsc_io.RISCV_cb);
             PC2P.push_front(rsc_io.RISCV_cb.Current_PC);
             instruction2P.push_front(rsc_io.RISCV_cb.instruction);
             this.status = 2'b00;
             this.display();
-            @(posedge rsc_io.RISCV_cb);
+            @(rsc_io.RISCV_cb);
             data_r_0_2P.push_front(rsc_io.RISCV_cb.data_r_0);
             data_r_1_2P.push_front(rsc_io.RISCV_cb.data_r_1);
             imm_out2P.push_front(rsc_io.RISCV_cb.imm_out);
             this.status = 2'b01;
             this.display();
-            @(posedge rsc_io.RISCV_cb);
+            @(rsc_io.RISCV_cb);
             ALU_Result_2P.push_front(rsc_io.RISCV_cb.ALU_Result);
             this.status = 2'b10;
             this.display();
-            repeat(2)@(posedge rsc_io.RISCV_cb);
+            repeat(2)@(rsc_io.RISCV_cb);
             WB_Output_2P.push_front(rsc_io.RISCV_cb.WB_Output);
             this.status = 2'b11;
             this.display();
@@ -115,8 +116,8 @@ endclass: RISCV_OUTPUTS
     endfunction: new
     
     function void RISCV_OUTPUTS::display();
-        $display("[%0t] Instruction number: %i | PC: %h | Instruction bin: %b | Data read 0: %d | Data read 1: %d | Immediate: %d | Calculated Result: %d | Write Back data: %b", 
-                    $time, Current_PC, instruction, data_r_0, data_r_1, imm_out, ALU_Result, WB_Output);
+        $display("[%0t] Instruction number: %d | PC: %h | Instruction bin: %b | Data read 0: %d | Data read 1: %d | Immediate: %d | Calculated Result: %d | Write Back data: %b", 
+                    $time, ID, Current_PC, instruction, data_r_0, data_r_1, imm_out, ALU_Result, WB_Output);
     endfunction: display
     
     function RISCV_OUTPUTS RISCV_OUTPUTS::copy();
@@ -130,3 +131,4 @@ endclass: RISCV_OUTPUTS
         OP2C.WB_Output = this.WB_Output;
         return OP2C;
     endfunction: copy
+`endif

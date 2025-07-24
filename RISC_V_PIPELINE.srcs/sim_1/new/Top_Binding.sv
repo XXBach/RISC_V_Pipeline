@@ -19,32 +19,47 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-
+`ifndef TOP_BINDING
+`define TOP_BINDING
 module Top_Binding(
     RISCV_IO.Assertion rsc_io_A,
-    input logic clk,
+    //IF_ID
+    input PCSel,
+    input RegWEn,
+    input ASel,
+    input BSel,
+    input MemRW,
+    input [1:0] WBSel,
     //ID_Exe
-    logic PCSel_Exe,
-    logic RegWEn_Exe,
-    logic ASel_Exe,
-    logic BSel_Exe,
-    logic MemRW_Exe,
-    logic [1:0] WBSel_Exe,
+    input PCSel_Exe,
+    input RegWEn_Exe,
+    input ASel_Exe,
+    input BSel_Exe,
+    input MemRW_Exe,
+    input [1:0] WBSel_Exe,
     //Exe_MA
-    logic PCSel_MA,
-    logic RegWEn_MA,
-    logic MemRW_MA,
-    logic [1:0] WBSel_MA,
+    input PCSel_MA,
+    input RegWEn_MA,
+    input MemRW_MA,
+    input [1:0] WBSel_MA,
     //MA_WB
-    logic PCSel_WB,
-    logic RegWEn_WB,
-    logic [1:0] WBSel_WB,
+    input PCSel_WB,
+    input RegWEn_WB,
+    input [1:0] WBSel_WB,
     //WB_IF
-    logic PCSel_IF,
-    logic RegWEn_IF
+    input PCSel_IF,
+    input RegWEn_IF
     );
     
-    always_ff @(posedge clk) begin
+    always_ff @(rsc_io_A.RISCV_cb) begin
+    //IF_ID
+    rsc_io_A.Top_PCSel = PCSel;
+    rsc_io_A.Top_RegWEn = RegWEn;
+    rsc_io_A.Top_ASel = ASel;
+    rsc_io_A.Top_BSel = BSel;
+    rsc_io_A.Top_MemRW = MemRW;
+    rsc_io_A.Top_WBSel = WBSel;
+    //ID_Exe
     rsc_io_A.Top_PCSel_Exe = PCSel_Exe;
     rsc_io_A.Top_RegWEn_Exe = RegWEn_Exe;
     rsc_io_A.Top_ASel_Exe = ASel_Exe;
@@ -65,3 +80,4 @@ module Top_Binding(
     rsc_io_A.Top_RegWEn_IF = RegWEn_IF;
     end
 endmodule
+`endif

@@ -69,7 +69,7 @@ module Datapath#(
     )IF(
         .clk(clk),
         .reset(reset),
-        .IMem_start(IMem_Start),
+        .IMem_Start(IMem_Start),
         .PCSel(PCSel),
         .ALU_addr(ALU_addr_IF),
         .current_addr(Current_PC),
@@ -98,7 +98,6 @@ module Datapath#(
     end
     
     //Instruction Decode Stage 
-    wire [DATA_WIDTH - 1:0] WB_Output;
     RegFile#(
         .DATA_WIDTH(DATA_WIDTH),
         .REGFILE_DEPTH(REGFILE_DEPTH)

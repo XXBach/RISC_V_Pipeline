@@ -57,7 +57,7 @@ module IMEM#(
         begin
             fd = $fopen("IMEM_expose.mem", "w");
             if (fd == 0) begin
-                $display("ERROR: Cannot open file %s for writing!", filename);
+                $display("ERROR: Cannot open file IMEM_expose.mem for writing!");
                 $finish;
             end
 
@@ -66,7 +66,7 @@ module IMEM#(
             end
 
             $fclose(fd);
-            $display("Memory dumped to %s successfully.", filename);
+            $display("Memory dumped to IMEM_expose.mem successfully.");
         end
     endtask
 endmodule

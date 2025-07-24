@@ -18,7 +18,8 @@
 // Additional Comments:
 // 
 //////////////////////////////////////////////////////////////////////////////////
-
+`ifndef CHECKER_OUTPUT_INFO
+`define CHECKER_OUTPUT_INFO
 typedef class RISCV_OUTPUTS;
 `include"Monitor.sv"
 typedef enum int {
@@ -278,3 +279,4 @@ endclass:Checker
             $display("[%0t] Instruction Success: %b", $time, OP2T.instruction);
         end
     endfunction:display
+`endif

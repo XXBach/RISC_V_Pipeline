@@ -19,7 +19,8 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-
+`ifndef RISCV_IO
+`define RISCV_IO
 interface RISCV_IO#(
     //Controller Params
     parameter INSTRUCTION_WIDTH = 32,
@@ -52,18 +53,12 @@ interface RISCV_IO#(
     
     // Top module internal signals
 //    // IF_ID
-//    logic Top_PCSel;
-//    logic [$clog2(IMM_MODE_NUMS) - 1:0] Top_ImmSel;
-//    logic Top_RegWEn;
-//    logic Top_BrUn;
-//    logic Top_BrEq;
-//    logic Top_BrLt;
-//    logic Top_ASel;
-//    logic Top_BSel;
-//    logic [$clog2(OPERATION_NUMS) - 1:0] Top_ALU_Sel;
-//    logic Top_MemRW;
-//    logic [1:0] Top_WBSel;
-//    logic [INSTRUCTION_WIDTH - 1:0] Top_instruction_ctrl;
+    logic Top_PCSel;
+    logic Top_RegWEn;
+    logic Top_ASel;
+    logic Top_BSel;
+    logic Top_MemRW;
+    logic [1:0] Top_WBSel;
     //ID_Exe
     logic Top_PCSel_Exe;
     logic Top_RegWEn_Exe;
@@ -101,5 +96,6 @@ interface RISCV_IO#(
      modport DUT(input reset, start, IMem_Start,
                     output Current_PC, instruction, data_r_0,
                     data_r_1, imm_out, ALU_Result, WB_Output);
-     modport Assertion (output Top_PCSel_Exe, Top_RegWEn_Exe, Top_ASel_Exe, Top_BSel_Exe, Top_MemRW_Exe, Top_WBSel_Exe, Top_PCSel_MA, Top_RegWEn_MA, Top_MemRW_MA, Top_WBSel_MA, Top_PCSel_WB, Top_RegWEn_WB, Top_WBSel_WB, Top_PCSel_IF, Top_RegWEn_IF);
+     modport Assertion (clocking RISCV_cb, output reset, Top_PCSel, Top_RegWEn, Top_ASel, Top_BSel, Top_MemRW, Top_WBSel, Top_PCSel_Exe, Top_RegWEn_Exe, Top_ASel_Exe, Top_BSel_Exe, Top_MemRW_Exe, Top_WBSel_Exe, Top_PCSel_MA, Top_RegWEn_MA, Top_MemRW_MA, Top_WBSel_MA, Top_PCSel_WB, Top_RegWEn_WB, Top_WBSel_WB, Top_PCSel_IF, Top_RegWEn_IF);
 endinterface: RISCV_IO
+`endif

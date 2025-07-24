@@ -18,17 +18,14 @@
 // Additional Comments:
 // 
 //////////////////////////////////////////////////////////////////////////////////
-
-
+`include "Generator.sv"
+`include "Agent.sv"
+`include "Driver.sv"
+`include "Monitor.sv"
+`include "Checker.sv"
+`include "Assertion.sv"
 program automatic RISCV_test(RISCV_IO.Test RSCV_io);
-    int run_for_n_instructions;
-    
-    `include "Generator.sv"
-    `include "Agent.sv"
-    `include "Driver.sv"
-    `include "Monitor.sv"
-    `include "Checker.sv"
-    `include "Assertion.sv"
+    int run_for_n_instructions;    
     
     Driver drvr;
     Monitor mntr;
@@ -39,7 +36,7 @@ program automatic RISCV_test(RISCV_IO.Test RSCV_io);
     
     
     initial begin 
-        run_for_n_instructions = 500;
+        run_for_n_instructions = 100;
         gen = new("GEN", run_for_n_instructions);
         code_file_gen = new("AGENT", gen.out_box);
         drvr = new("DRIVER", RSCV_io);

@@ -19,7 +19,8 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-
+`ifndef ASSERTION
+`define ASSERTION
 class Assertion#(
     //Controller Params
     parameter INSTRUCTION_WIDTH = 32,
@@ -35,11 +36,10 @@ class Assertion#(
     parameter REGFILE_DEPTH = 32
 );
     string name;
-    RISCV_IO.Assertion rsc_io;
+    virtual RISCV_IO.Assertion rsc_io;
     
     extern function new(string name = "Assertion", virtual RISCV_IO.Assertion rsc_io);
     extern task running_assertion();
-    extern function void display();
 
 endclass: Assertion
     function Assertion::new(string name, virtual RISCV_IO.Assertion rsc_io);
@@ -69,13 +69,13 @@ endclass: Assertion
         logic prev_Top_RegWEn_IF;
         
         forever begin
-            @(posedge rsc_io.clk);
+            @(rsc_io.RISCV_cb);
             if(!rsc_io.reset) begin
                 //assert(rsc_io.CTRL_instruction_ff == $past(rsc_io.CTRL_instruction));
                 //unable to use $past in vivado
                 //ID_Exe
                 prev_Top_PCSel_Exe = rsc_io.Top_PCSel;
-                prev_Top_RegWEn_Exe = rsc_io.RegWEn;
+                prev_Top_RegWEn_Exe = rsc_io.Top_RegWEn;
                 prev_Top_ASel_Exe = rsc_io.Top_ASel;
                 prev_Top_BSel_Exe = rsc_io.Top_BSel;
                 prev_Top_MemRW_Exe = rsc_io.Top_MemRW;
@@ -89,7 +89,7 @@ endclass: Assertion
                 
                 //Exe_MA
                 prev_Top_PCSel_MA = rsc_io.Top_PCSel_Exe;
-                prev_Top_RegWEn_MA = rsc_io.RegWEn_Exe;
+                prev_Top_RegWEn_MA = rsc_io.Top_RegWEn_Exe;
                 prev_Top_MemRW_MA = rsc_io.Top_MemRW_Exe;
                 prev_Top_WBSel_MA = rsc_io.Top_WBSel_Exe;
                 assert(rsc_io.Top_PCSel_MA == prev_Top_PCSel_MA) else $warning("Fail! PCSel from Exe to MA: Expected: %d, Received: %d", rsc_io.Top_PCSel_MA, prev_Top_PCSel_MA);
@@ -99,7 +99,7 @@ endclass: Assertion
                 
                 //MA_WB
                 prev_Top_PCSel_WB = rsc_io.Top_PCSel_MA;
-                prev_Top_RegWEn_WB = rsc_io.RegWEn_MA;
+                prev_Top_RegWEn_WB = rsc_io.Top_RegWEn_MA;
                 prev_Top_WBSel_WB = rsc_io.Top_WBSel_MA;
                 assert(rsc_io.Top_PCSel_WB == prev_Top_PCSel_WB) else $warning("Fail! PCSel from MA to WB: Expected: %d, Received: %d", rsc_io.Top_PCSel_WB, prev_Top_PCSel_WB);
                 assert(rsc_io.Top_RegWEn_WB == prev_Top_RegWEn_WB) else $warning("Fail! RegWEn from MA to WB: Expected: %d, Received: %d", rsc_io.Top_RegWEn_WB, prev_Top_RegWEn_WB);
@@ -107,10 +107,12 @@ endclass: Assertion
                 
                 //WB_IF
                 prev_Top_PCSel_IF = rsc_io.Top_PCSel_WB;
-                prev_Top_RegWEn_IF = rsc_io.RegWEn_WB;
+                prev_Top_RegWEn_IF = rsc_io.Top_RegWEn_WB;
                 assert(rsc_io.Top_PCSel_IF == prev_Top_PCSel_IF) else $warning("Fail! PCSel from WB to IF: Expected: %d, Received: %d", rsc_io.Top_PCSel_IF, prev_Top_PCSel_IF);
                 assert(rsc_io.Top_RegWEn_IF == prev_Top_RegWEn_IF) else $warning("Fail! RegWEn from WB to IF: Expected: %d, Received: %d", rsc_io.Top_RegWEn_IF, prev_Top_RegWEn_IF);
             
             end
         end
-    endtask:running_assertion    
+    endtask:running_assertion
+    
+`endif    

@@ -1,7 +1,0 @@
-Running: xsim.dir/Instruction_Fetch_behav/xsimk.exe -simmode gui -wdb Instruction_Fetch_behav.wdb -simrunnum 0 -socket 49691
-Design successfully loaded
-Design Loading Memory Usage: 9472 KB (Peak: 9472 KB)
-Design Loading CPU Usage: 0 ms
-Simulation completed
-Simulation Memory Usage: 10196 KB (Peak: 10196 KB)
-Simulation CPU Usage: 15 ms

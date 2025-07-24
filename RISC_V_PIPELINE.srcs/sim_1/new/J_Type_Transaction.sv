@@ -19,7 +19,8 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-
+`ifndef J_TRANSACTION
+`define J_TRANSACTION
 class J_Type_Transaction;
     //property declaration
     int ID;
@@ -42,7 +43,7 @@ function J_Type_Transaction::new(int ID, bit [6:0] opcode = 7'b1101111);
 endfunction: new
     
 function void J_Type_Transaction::display(string prefix);
-    $display("[%0t] Transaction_ID: %i| Instruction: %b| Status: %s", $time, ID, Instruction, prefix);
+    $display("[%0t] Transaction_ID: %d| Instruction: %b| Status: %s", $time, ID, instruction, prefix);
 endfunction: display
 
 function void J_Type_Transaction::post_randomize();
@@ -56,3 +57,4 @@ function J_Type_Transaction J_Type_Transaction::copy();
     Transaction_Copy.imm = this.imm;
     Transaction_Copy.instruction = this.instruction;
 endfunction: copy 
+`endif

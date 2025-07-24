@@ -19,7 +19,8 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-
+`ifndef I_TRANSACTION
+`define I_TRANSACTION
 class I_Type_Transaction;
     //property declaration
     int ID;
@@ -52,7 +53,7 @@ function I_Type_Transaction::new(int ID);
 endfunction: new
     
 function void I_Type_Transaction::display(string prefix);
-    $display("[%0t] Transaction_ID: %i| Instruction: %b| Status: %s", $time, ID, Instruction, prefix);
+    $display("[%0t] Transaction_ID: %d| Instruction: %b| Status: %s", $time, ID, instruction, prefix);
 endfunction: display
 
 function void I_Type_Transaction::post_randomize();
@@ -73,3 +74,4 @@ function I_Type_Transaction I_Type_Transaction::copy();
     Transaction_Copy.imm = this.imm;
     Transaction_Copy.instruction = this.instruction;
 endfunction: copy    
+`endif

@@ -18,9 +18,10 @@
 // Additional Comments:
 // 
 //////////////////////////////////////////////////////////////////////////////////
-
+`ifndef GEN_INST_INFO
+`define GEN_INST_INFO
 typedef class instr;
-
+typedef class Instr_TYPE;
 `include "I_Type_Transaction.sv"
 `include "B_Type_Transaction.sv"
 `include "J_Type_Transaction.sv"
@@ -43,11 +44,11 @@ class Generator;
     string name;
     int run_for_n_instructions;
     bit status = 0;
-    Instr_TYPE instruction_Type = new(0);
+    Instr_TYPE instruction_Type = new(0,5,5,0,0,0,0,0);
     Instr_mbox out_box;
     
     extern function new (string name = "GEN", int run_for_n_instructions = 1024);
-    extern function start ();
+    extern task start ();
     extern function void display (int instruction_n);
 endclass: Generator
 
@@ -56,12 +57,12 @@ function Generator::new(string name, int run_for_n_instructions);
     this.run_for_n_instructions = run_for_n_instructions;
 endfunction: new
 
-function Generator::display(int instruction_n);
-    if(status) $display("[%0t] Generation finished successfully with %i instructions", $time, run_for_n_instructions);
-    else $display("[%0t] Generating.... | Completed: %i | Instruction amounts require: %i", $time, instruction_n, run_for_n_instructions); 
+function void Generator::display(int instruction_n);
+    if(status) $display("[%0t] Generation finished successfully with %d instructions", $time, run_for_n_instructions);
+    else $display("[%0t] Generating.... | Completed: %d | Instruction amounts require: %d", $time, instruction_n, run_for_n_instructions); 
 endfunction: display
 
-function Generator::start();
+task Generator::start();
     out_box = new(run_for_n_instructions);
     for(int i = 0; i <= run_for_n_instructions; i++) begin
         if(i == run_for_n_instructions) status = 1;
@@ -155,7 +156,7 @@ function Generator::start();
             end
         endcase
     end
-endfunction: start
+endtask: start
 
 //////////////////////////////////////////////////////////////////////////////////////////////////
 class Instr_TYPE;
@@ -174,7 +175,7 @@ class Instr_TYPE;
     };
     extern function new (int ID, int R_wt, int I_wt, int J_wt, int S_wt, int B_wt, int UI_wt, int JALR_wt);
     extern function void display ( string prefix );
-    extern function Instr_Type copy();
+    extern function Instr_TYPE copy();
 endclass: Instr_TYPE
 
 function Instr_TYPE::new(int ID, int R_wt, int I_wt, int J_wt, int S_wt, int B_wt, int UI_wt, int JALR_wt);
@@ -189,7 +190,7 @@ function Instr_TYPE::new(int ID, int R_wt, int I_wt, int J_wt, int S_wt, int B_w
 endfunction: new
 
 function void Instr_TYPE::display(string prefix);
-    $display("Instruction type decided at time: [%0t]| Instruction number: %i| Instruction type: %i", $time, ID, instr_Type); 
+    $display("Instruction type decided at time: [%0t]| Instruction number: %d| Instruction type: %d", $time, ID, instr_Type); 
 endfunction: display
 
 function Instr_TYPE Instr_TYPE::copy();
@@ -220,4 +221,4 @@ class instr;
         return i2C;
     endfunction: copy
 endclass: instr
-
+`endif

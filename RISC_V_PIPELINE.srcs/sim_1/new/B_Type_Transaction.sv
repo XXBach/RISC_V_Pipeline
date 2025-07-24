@@ -19,7 +19,8 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-
+`ifndef B_TRANSACTION
+`define B_TRANSACTION
 class B_Type_Transaction;
     //property declaration
     int ID;
@@ -47,7 +48,7 @@ function B_Type_Transaction::new(int ID, bit [6:0] opcode = 7'b1100011);
 endfunction: new
     
 function void B_Type_Transaction::display(string prefix);
-    $display("[%0t] Transaction_ID: %i| Instruction: %b| Status: %s", $time, ID, Instruction, prefix);
+    $display("[%0t] Transaction_ID: %d| Instruction: %b| Status: %s", $time, ID, instruction, prefix);
 endfunction: display
 
 function void B_Type_Transaction::post_randomize();
@@ -63,4 +64,4 @@ function B_Type_Transaction B_Type_Transaction::copy();
     Transaction_Copy.imm = this.imm;
     Transaction_Copy.instruction = this.instruction;
 endfunction: copy    
-
+`endif
