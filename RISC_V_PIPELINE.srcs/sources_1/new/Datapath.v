@@ -66,7 +66,7 @@ module Datapath#(
         .ADDR_WIDTH(ADDR_WIDTH),
         .INSTRUCTION_WIDTH(INSTRUCTION_WIDTH),
         .IMEM_LENGTH(IMEM_LENGTH)
-    )IF(
+    )ins_Fetch(
         .clk(clk),
         .reset(reset),
         .IMem_Start(IMem_Start),
@@ -82,8 +82,8 @@ module Datapath#(
     reg [DATA_WIDTH - 1:0] ALU_result_ID;
     reg [INSTRUCTION_WIDTH - 1:0] instruction_ID;
     reg [ADDR_WIDTH - 1:0] accumulated_addr_ID;
-    always@(posedge clk or negedge reset) begin
-        if(!reset) begin
+    always@(posedge clk or posedge reset) begin
+        if(reset) begin
             Current_PC_ID <= 0;
             instruction_ID <= 0;
             accumulated_addr_ID <= 0;
@@ -136,8 +136,8 @@ module Datapath#(
     reg [DATA_WIDTH - 1:0] rs1;
     reg [DATA_WIDTH - 1:0] rs2;
     reg [DATA_WIDTH - 1:0] imm_Exe;
-    always@(posedge clk or negedge reset) begin
-        if(!reset) begin
+    always@(posedge clk or posedge reset) begin
+        if(reset) begin
             Current_PC_Exe <= 0;
             accumulated_addr_Exe <= 0;
             ALU_result_ID <= 0;
@@ -175,8 +175,8 @@ module Datapath#(
     reg [DATA_WIDTH - 1:0] ALU_result_MA;
     reg [ADDR_WIDTH - 1:0] accumulated_addr_MA;
     reg [DATA_WIDTH - 1:0] Data_W;
-    always@(posedge clk or negedge reset) begin
-        if(!reset) begin
+    always@(posedge clk or posedge reset) begin
+        if(reset) begin
             Data_W <= 0;
             accumulated_addr_MA <= 0;
             ALU_result_MA <= 0;

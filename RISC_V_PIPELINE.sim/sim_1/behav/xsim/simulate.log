@@ -1,203 +1,709 @@
 Time resolution is 1 ps
 [0] Generating.... | Completed:           0 | Instruction amounts require:         100
-Instruction type decided at time: [0]| Instruction number:           0| Instruction type:           0
+Instruction type decided at time: [0]| Instruction number:           0| Instruction type:           1
+[0] | ID:           0 | Instruction Generated: 00000100101011111111000000010011
 [0] Generating.... | Completed:           1 | Instruction amounts require:         100
-Instruction type decided at time: [0]| Instruction number:           1| Instruction type:           0
+Instruction type decided at time: [0]| Instruction number:           1| Instruction type:           1
+[0] | ID:           1 | Instruction Generated: 10010111010101010101000000000011
 [0] Generating.... | Completed:           2 | Instruction amounts require:         100
-Instruction type decided at time: [0]| Instruction number:           2| Instruction type:           0
+Instruction type decided at time: [0]| Instruction number:           2| Instruction type:           1
+[0] | ID:           2 | Instruction Generated: 10000110000001010000110000000011
 [0] Generating.... | Completed:           3 | Instruction amounts require:         100
-Instruction type decided at time: [0]| Instruction number:           3| Instruction type:           1
+Instruction type decided at time: [0]| Instruction number:           3| Instruction type:           0
+[0] | ID:           3 | Instruction Generated: 00000000110001100100011010110011
 [0] Generating.... | Completed:           4 | Instruction amounts require:         100
 Instruction type decided at time: [0]| Instruction number:           4| Instruction type:           0
+[0] | ID:           4 | Instruction Generated: 00000000010000010101011000110011
 [0] Generating.... | Completed:           5 | Instruction amounts require:         100
 Instruction type decided at time: [0]| Instruction number:           5| Instruction type:           0
+[0] | ID:           5 | Instruction Generated: 00000001010000001101100010110011
 [0] Generating.... | Completed:           6 | Instruction amounts require:         100
-Instruction type decided at time: [0]| Instruction number:           6| Instruction type:           0
+Instruction type decided at time: [0]| Instruction number:           6| Instruction type:           1
+[0] | ID:           6 | Instruction Generated: 11100110110001001000010010010011
 [0] Generating.... | Completed:           7 | Instruction amounts require:         100
 Instruction type decided at time: [0]| Instruction number:           7| Instruction type:           1
+[0] | ID:           7 | Instruction Generated: 01111001010110010111100000010011
 [0] Generating.... | Completed:           8 | Instruction amounts require:         100
 Instruction type decided at time: [0]| Instruction number:           8| Instruction type:           1
+[0] | ID:           8 | Instruction Generated: 11100001110001110101011100000011
 [0] Generating.... | Completed:           9 | Instruction amounts require:         100
 Instruction type decided at time: [0]| Instruction number:           9| Instruction type:           1
+[0] | ID:           9 | Instruction Generated: 01001000111010001101111000010011
 [0] Generating.... | Completed:          10 | Instruction amounts require:         100
 Instruction type decided at time: [0]| Instruction number:          10| Instruction type:           0
+[0] | ID:          10 | Instruction Generated: 01000001100000111010111110110011
 [0] Generating.... | Completed:          11 | Instruction amounts require:         100
 Instruction type decided at time: [0]| Instruction number:          11| Instruction type:           0
+[0] | ID:          11 | Instruction Generated: 01000000101110101000101010110011
 [0] Generating.... | Completed:          12 | Instruction amounts require:         100
 Instruction type decided at time: [0]| Instruction number:          12| Instruction type:           1
+[0] | ID:          12 | Instruction Generated: 10111000011100101100000000000011
 [0] Generating.... | Completed:          13 | Instruction amounts require:         100
 Instruction type decided at time: [0]| Instruction number:          13| Instruction type:           0
+[0] | ID:          13 | Instruction Generated: 00000000111000010011100100110011
 [0] Generating.... | Completed:          14 | Instruction amounts require:         100
 Instruction type decided at time: [0]| Instruction number:          14| Instruction type:           0
+[0] | ID:          14 | Instruction Generated: 01000001010000000011010110110011
 [0] Generating.... | Completed:          15 | Instruction amounts require:         100
-Instruction type decided at time: [0]| Instruction number:          15| Instruction type:           0
+Instruction type decided at time: [0]| Instruction number:          15| Instruction type:           1
+[0] | ID:          15 | Instruction Generated: 10100010100101100110001100010011
 [0] Generating.... | Completed:          16 | Instruction amounts require:         100
 Instruction type decided at time: [0]| Instruction number:          16| Instruction type:           1
+[0] | ID:          16 | Instruction Generated: 00111010101001100001101110000011
 [0] Generating.... | Completed:          17 | Instruction amounts require:         100
 Instruction type decided at time: [0]| Instruction number:          17| Instruction type:           1
+[0] | ID:          17 | Instruction Generated: 00000001011101101100010110000011
 [0] Generating.... | Completed:          18 | Instruction amounts require:         100
 Instruction type decided at time: [0]| Instruction number:          18| Instruction type:           0
+[0] | ID:          18 | Instruction Generated: 01000001110101000010011000110011
 [0] Generating.... | Completed:          19 | Instruction amounts require:         100
 Instruction type decided at time: [0]| Instruction number:          19| Instruction type:           1
+[0] | ID:          19 | Instruction Generated: 10010100100111010001101000010011
 [0] Generating.... | Completed:          20 | Instruction amounts require:         100
 Instruction type decided at time: [0]| Instruction number:          20| Instruction type:           1
+[0] | ID:          20 | Instruction Generated: 11001000100000010000001110010011
 [0] Generating.... | Completed:          21 | Instruction amounts require:         100
 Instruction type decided at time: [0]| Instruction number:          21| Instruction type:           0
+[0] | ID:          21 | Instruction Generated: 00000000000011011000110100110011
 [0] Generating.... | Completed:          22 | Instruction amounts require:         100
-Instruction type decided at time: [0]| Instruction number:          22| Instruction type:           0
+Instruction type decided at time: [0]| Instruction number:          22| Instruction type:           1
+[0] | ID:          22 | Instruction Generated: 10100010111001100000001100000011
 [0] Generating.... | Completed:          23 | Instruction amounts require:         100
 Instruction type decided at time: [0]| Instruction number:          23| Instruction type:           1
+[0] | ID:          23 | Instruction Generated: 11100001110000011010100110010011
 [0] Generating.... | Completed:          24 | Instruction amounts require:         100
-Instruction type decided at time: [0]| Instruction number:          24| Instruction type:           1
+Instruction type decided at time: [0]| Instruction number:          24| Instruction type:           0
+[0] | ID:          24 | Instruction Generated: 01000000001000000011101110110011
 [0] Generating.... | Completed:          25 | Instruction amounts require:         100
 Instruction type decided at time: [0]| Instruction number:          25| Instruction type:           1
+[0] | ID:          25 | Instruction Generated: 10101001011100110100100110010011
 [0] Generating.... | Completed:          26 | Instruction amounts require:         100
-Instruction type decided at time: [0]| Instruction number:          26| Instruction type:           0
+Instruction type decided at time: [0]| Instruction number:          26| Instruction type:           1
+[0] | ID:          26 | Instruction Generated: 11100100011011101000101010000011
 [0] Generating.... | Completed:          27 | Instruction amounts require:         100
-Instruction type decided at time: [0]| Instruction number:          27| Instruction type:           1
+Instruction type decided at time: [0]| Instruction number:          27| Instruction type:           0
+[0] | ID:          27 | Instruction Generated: 00000000010000111111001110110011
 [0] Generating.... | Completed:          28 | Instruction amounts require:         100
-Instruction type decided at time: [0]| Instruction number:          28| Instruction type:           0
+Instruction type decided at time: [0]| Instruction number:          28| Instruction type:           1
+[0] | ID:          28 | Instruction Generated: 01100010000011010101010110000011
 [0] Generating.... | Completed:          29 | Instruction amounts require:         100
-Instruction type decided at time: [0]| Instruction number:          29| Instruction type:           0
+Instruction type decided at time: [0]| Instruction number:          29| Instruction type:           1
+[0] | ID:          29 | Instruction Generated: 10010000010100010110010010010011
 [0] Generating.... | Completed:          30 | Instruction amounts require:         100
-Instruction type decided at time: [0]| Instruction number:          30| Instruction type:           1
+Instruction type decided at time: [0]| Instruction number:          30| Instruction type:           0
+[0] | ID:          30 | Instruction Generated: 00000000000100101010001000110011
 [0] Generating.... | Completed:          31 | Instruction amounts require:         100
 Instruction type decided at time: [0]| Instruction number:          31| Instruction type:           0
+[0] | ID:          31 | Instruction Generated: 00000001001101001000001110110011
 [0] Generating.... | Completed:          32 | Instruction amounts require:         100
 Instruction type decided at time: [0]| Instruction number:          32| Instruction type:           0
+[0] | ID:          32 | Instruction Generated: 00000000100101000111101100110011
 [0] Generating.... | Completed:          33 | Instruction amounts require:         100
-Instruction type decided at time: [0]| Instruction number:          33| Instruction type:           0
+Instruction type decided at time: [0]| Instruction number:          33| Instruction type:           1
+[0] | ID:          33 | Instruction Generated: 01100101001101001111101100010011
 [0] Generating.... | Completed:          34 | Instruction amounts require:         100
 Instruction type decided at time: [0]| Instruction number:          34| Instruction type:           0
+[0] | ID:          34 | Instruction Generated: 00000000111010110111001010110011
 [0] Generating.... | Completed:          35 | Instruction amounts require:         100
-Instruction type decided at time: [0]| Instruction number:          35| Instruction type:           1
+Instruction type decided at time: [0]| Instruction number:          35| Instruction type:           0
+[0] | ID:          35 | Instruction Generated: 01000000010010111111000010110011
 [0] Generating.... | Completed:          36 | Instruction amounts require:         100
 Instruction type decided at time: [0]| Instruction number:          36| Instruction type:           1
+[0] | ID:          36 | Instruction Generated: 11110111010011110010010110010011
 [0] Generating.... | Completed:          37 | Instruction amounts require:         100
-Instruction type decided at time: [0]| Instruction number:          37| Instruction type:           1
+Instruction type decided at time: [0]| Instruction number:          37| Instruction type:           0
+[0] | ID:          37 | Instruction Generated: 01000000000000111111001010110011
 [0] Generating.... | Completed:          38 | Instruction amounts require:         100
-Instruction type decided at time: [0]| Instruction number:          38| Instruction type:           1
+Instruction type decided at time: [0]| Instruction number:          38| Instruction type:           0
+[0] | ID:          38 | Instruction Generated: 01000001100100111111111000110011
 [0] Generating.... | Completed:          39 | Instruction amounts require:         100
-Instruction type decided at time: [0]| Instruction number:          39| Instruction type:           1
+Instruction type decided at time: [0]| Instruction number:          39| Instruction type:           0
+[0] | ID:          39 | Instruction Generated: 00000000011110100011100110110011
 [0] Generating.... | Completed:          40 | Instruction amounts require:         100
 Instruction type decided at time: [0]| Instruction number:          40| Instruction type:           0
+[0] | ID:          40 | Instruction Generated: 00000000000110110010101100110011
 [0] Generating.... | Completed:          41 | Instruction amounts require:         100
-Instruction type decided at time: [0]| Instruction number:          41| Instruction type:           0
+Instruction type decided at time: [0]| Instruction number:          41| Instruction type:           1
+[0] | ID:          41 | Instruction Generated: 01101001100001101010011010010011
 [0] Generating.... | Completed:          42 | Instruction amounts require:         100
-Instruction type decided at time: [0]| Instruction number:          42| Instruction type:           1
+Instruction type decided at time: [0]| Instruction number:          42| Instruction type:           0
+[0] | ID:          42 | Instruction Generated: 01000000000000000101101000110011
 [0] Generating.... | Completed:          43 | Instruction amounts require:         100
 Instruction type decided at time: [0]| Instruction number:          43| Instruction type:           0
+[0] | ID:          43 | Instruction Generated: 01000001001110110000100100110011
 [0] Generating.... | Completed:          44 | Instruction amounts require:         100
 Instruction type decided at time: [0]| Instruction number:          44| Instruction type:           1
+[0] | ID:          44 | Instruction Generated: 01111100101001000100010100010011
 [0] Generating.... | Completed:          45 | Instruction amounts require:         100
-Instruction type decided at time: [0]| Instruction number:          45| Instruction type:           1
+Instruction type decided at time: [0]| Instruction number:          45| Instruction type:           0
+[0] | ID:          45 | Instruction Generated: 00000001111110010111111110110011
 [0] Generating.... | Completed:          46 | Instruction amounts require:         100
-Instruction type decided at time: [0]| Instruction number:          46| Instruction type:           1
+Instruction type decided at time: [0]| Instruction number:          46| Instruction type:           0
+[0] | ID:          46 | Instruction Generated: 01000000010000100001011100110011
 [0] Generating.... | Completed:          47 | Instruction amounts require:         100
 Instruction type decided at time: [0]| Instruction number:          47| Instruction type:           1
+[0] | ID:          47 | Instruction Generated: 00100001111000111100100010010011
 [0] Generating.... | Completed:          48 | Instruction amounts require:         100
-Instruction type decided at time: [0]| Instruction number:          48| Instruction type:           0
+Instruction type decided at time: [0]| Instruction number:          48| Instruction type:           1
+[0] | ID:          48 | Instruction Generated: 01010000100111111000110010000011
 [0] Generating.... | Completed:          49 | Instruction amounts require:         100
 Instruction type decided at time: [0]| Instruction number:          49| Instruction type:           1
+[0] | ID:          49 | Instruction Generated: 10101001110100000010001100000011
 [0] Generating.... | Completed:          50 | Instruction amounts require:         100
-Instruction type decided at time: [0]| Instruction number:          50| Instruction type:           0
+Instruction type decided at time: [0]| Instruction number:          50| Instruction type:           1
+[0] | ID:          50 | Instruction Generated: 01111001000111010011111000010011
 [0] Generating.... | Completed:          51 | Instruction amounts require:         100
 Instruction type decided at time: [0]| Instruction number:          51| Instruction type:           1
+[0] | ID:          51 | Instruction Generated: 11010100100101111010110000010011
 [0] Generating.... | Completed:          52 | Instruction amounts require:         100
 Instruction type decided at time: [0]| Instruction number:          52| Instruction type:           0
+[0] | ID:          52 | Instruction Generated: 00000001100110110111001010110011
 [0] Generating.... | Completed:          53 | Instruction amounts require:         100
-Instruction type decided at time: [0]| Instruction number:          53| Instruction type:           0
+Instruction type decided at time: [0]| Instruction number:          53| Instruction type:           1
+[0] | ID:          53 | Instruction Generated: 11001100011110110101010000000011
 [0] Generating.... | Completed:          54 | Instruction amounts require:         100
-Instruction type decided at time: [0]| Instruction number:          54| Instruction type:           1
+Instruction type decided at time: [0]| Instruction number:          54| Instruction type:           0
+[0] | ID:          54 | Instruction Generated: 01000000000100001011110000110011
 [0] Generating.... | Completed:          55 | Instruction amounts require:         100
-Instruction type decided at time: [0]| Instruction number:          55| Instruction type:           0
+Instruction type decided at time: [0]| Instruction number:          55| Instruction type:           1
+[0] | ID:          55 | Instruction Generated: 00001111001010101011101010010011
 [0] Generating.... | Completed:          56 | Instruction amounts require:         100
-Instruction type decided at time: [0]| Instruction number:          56| Instruction type:           0
+Instruction type decided at time: [0]| Instruction number:          56| Instruction type:           1
+[0] | ID:          56 | Instruction Generated: 01111111010110000011111000010011
 [0] Generating.... | Completed:          57 | Instruction amounts require:         100
 Instruction type decided at time: [0]| Instruction number:          57| Instruction type:           1
+[0] | ID:          57 | Instruction Generated: 01010111001101000001000110000011
 [0] Generating.... | Completed:          58 | Instruction amounts require:         100
-Instruction type decided at time: [0]| Instruction number:          58| Instruction type:           0
+Instruction type decided at time: [0]| Instruction number:          58| Instruction type:           1
+[0] | ID:          58 | Instruction Generated: 11000011101001000101001100000011
 [0] Generating.... | Completed:          59 | Instruction amounts require:         100
 Instruction type decided at time: [0]| Instruction number:          59| Instruction type:           0
+[0] | ID:          59 | Instruction Generated: 00000001010010011100110000110011
 [0] Generating.... | Completed:          60 | Instruction amounts require:         100
-Instruction type decided at time: [0]| Instruction number:          60| Instruction type:           0
+Instruction type decided at time: [0]| Instruction number:          60| Instruction type:           1
+[0] | ID:          60 | Instruction Generated: 00101010101100100001010000000011
 [0] Generating.... | Completed:          61 | Instruction amounts require:         100
 Instruction type decided at time: [0]| Instruction number:          61| Instruction type:           0
+[0] | ID:          61 | Instruction Generated: 00000001010110010010010010110011
 [0] Generating.... | Completed:          62 | Instruction amounts require:         100
-Instruction type decided at time: [0]| Instruction number:          62| Instruction type:           0
+Instruction type decided at time: [0]| Instruction number:          62| Instruction type:           1
+[0] | ID:          62 | Instruction Generated: 00001001111101101111000110010011
 [0] Generating.... | Completed:          63 | Instruction amounts require:         100
-Instruction type decided at time: [0]| Instruction number:          63| Instruction type:           1
+Instruction type decided at time: [0]| Instruction number:          63| Instruction type:           0
+[0] | ID:          63 | Instruction Generated: 00000000101101100001010010110011
 [0] Generating.... | Completed:          64 | Instruction amounts require:         100
 Instruction type decided at time: [0]| Instruction number:          64| Instruction type:           0
+[0] | ID:          64 | Instruction Generated: 01000000011101101000110010110011
 [0] Generating.... | Completed:          65 | Instruction amounts require:         100
 Instruction type decided at time: [0]| Instruction number:          65| Instruction type:           1
+[0] | ID:          65 | Instruction Generated: 11010101011100110010010110010011
 [0] Generating.... | Completed:          66 | Instruction amounts require:         100
-Instruction type decided at time: [0]| Instruction number:          66| Instruction type:           1
+Instruction type decided at time: [0]| Instruction number:          66| Instruction type:           0
+[0] | ID:          66 | Instruction Generated: 01000001010111101100101000110011
 [0] Generating.... | Completed:          67 | Instruction amounts require:         100
 Instruction type decided at time: [0]| Instruction number:          67| Instruction type:           1
+[0] | ID:          67 | Instruction Generated: 00001111110100000101100000000011
 [0] Generating.... | Completed:          68 | Instruction amounts require:         100
 Instruction type decided at time: [0]| Instruction number:          68| Instruction type:           0
+[0] | ID:          68 | Instruction Generated: 00000000101000010110010100110011
 [0] Generating.... | Completed:          69 | Instruction amounts require:         100
-Instruction type decided at time: [0]| Instruction number:          69| Instruction type:           0
+Instruction type decided at time: [0]| Instruction number:          69| Instruction type:           1
+[0] | ID:          69 | Instruction Generated: 10111010110111000000010100000011
 [0] Generating.... | Completed:          70 | Instruction amounts require:         100
 Instruction type decided at time: [0]| Instruction number:          70| Instruction type:           1
+[0] | ID:          70 | Instruction Generated: 01110010101010000001001010010011
 [0] Generating.... | Completed:          71 | Instruction amounts require:         100
 Instruction type decided at time: [0]| Instruction number:          71| Instruction type:           1
+[0] | ID:          71 | Instruction Generated: 01011101101100101000001110010011
 [0] Generating.... | Completed:          72 | Instruction amounts require:         100
 Instruction type decided at time: [0]| Instruction number:          72| Instruction type:           1
+[0] | ID:          72 | Instruction Generated: 01101100010011000100110010000011
 [0] Generating.... | Completed:          73 | Instruction amounts require:         100
-Instruction type decided at time: [0]| Instruction number:          73| Instruction type:           1
+Instruction type decided at time: [0]| Instruction number:          73| Instruction type:           0
+[0] | ID:          73 | Instruction Generated: 01000001101011011110100010110011
 [0] Generating.... | Completed:          74 | Instruction amounts require:         100
 Instruction type decided at time: [0]| Instruction number:          74| Instruction type:           1
+[0] | ID:          74 | Instruction Generated: 01101110111110010010010100000011
 [0] Generating.... | Completed:          75 | Instruction amounts require:         100
-Instruction type decided at time: [0]| Instruction number:          75| Instruction type:           0
+Instruction type decided at time: [0]| Instruction number:          75| Instruction type:           1
+[0] | ID:          75 | Instruction Generated: 11110010001001100000001110010011
 [0] Generating.... | Completed:          76 | Instruction amounts require:         100
 Instruction type decided at time: [0]| Instruction number:          76| Instruction type:           1
+[0] | ID:          76 | Instruction Generated: 11001100010101100011111100010011
 [0] Generating.... | Completed:          77 | Instruction amounts require:         100
-Instruction type decided at time: [0]| Instruction number:          77| Instruction type:           1
+Instruction type decided at time: [0]| Instruction number:          77| Instruction type:           0
+[0] | ID:          77 | Instruction Generated: 01000001101001000100101000110011
 [0] Generating.... | Completed:          78 | Instruction amounts require:         100
-Instruction type decided at time: [0]| Instruction number:          78| Instruction type:           1
+Instruction type decided at time: [0]| Instruction number:          78| Instruction type:           0
+[0] | ID:          78 | Instruction Generated: 00000000101001101011000010110011
 [0] Generating.... | Completed:          79 | Instruction amounts require:         100
 Instruction type decided at time: [0]| Instruction number:          79| Instruction type:           1
+[0] | ID:          79 | Instruction Generated: 00011010001111100000111110000011
 [0] Generating.... | Completed:          80 | Instruction amounts require:         100
-Instruction type decided at time: [0]| Instruction number:          80| Instruction type:           0
+Instruction type decided at time: [0]| Instruction number:          80| Instruction type:           1
+[0] | ID:          80 | Instruction Generated: 11111111010011000010111000000011
 [0] Generating.... | Completed:          81 | Instruction amounts require:         100
-Instruction type decided at time: [0]| Instruction number:          81| Instruction type:           0
+Instruction type decided at time: [0]| Instruction number:          81| Instruction type:           1
+[0] | ID:          81 | Instruction Generated: 11001000100101001110000110010011
 [0] Generating.... | Completed:          82 | Instruction amounts require:         100
-Instruction type decided at time: [0]| Instruction number:          82| Instruction type:           0
+Instruction type decided at time: [0]| Instruction number:          82| Instruction type:           1
+[0] | ID:          82 | Instruction Generated: 00010011000101100000000010010011
 [0] Generating.... | Completed:          83 | Instruction amounts require:         100
-Instruction type decided at time: [0]| Instruction number:          83| Instruction type:           0
+Instruction type decided at time: [0]| Instruction number:          83| Instruction type:           1
+[0] | ID:          83 | Instruction Generated: 10101010100011111100010110010011
 [0] Generating.... | Completed:          84 | Instruction amounts require:         100
 Instruction type decided at time: [0]| Instruction number:          84| Instruction type:           1
+[0] | ID:          84 | Instruction Generated: 10011100111110100100101010010011
 [0] Generating.... | Completed:          85 | Instruction amounts require:         100
 Instruction type decided at time: [0]| Instruction number:          85| Instruction type:           1
+[0] | ID:          85 | Instruction Generated: 01110111111111001001101000010011
 [0] Generating.... | Completed:          86 | Instruction amounts require:         100
-Instruction type decided at time: [0]| Instruction number:          86| Instruction type:           0
+Instruction type decided at time: [0]| Instruction number:          86| Instruction type:           1
+[0] | ID:          86 | Instruction Generated: 11110010010100010101010000000011
 [0] Generating.... | Completed:          87 | Instruction amounts require:         100
-Instruction type decided at time: [0]| Instruction number:          87| Instruction type:           1
+Instruction type decided at time: [0]| Instruction number:          87| Instruction type:           0
+[0] | ID:          87 | Instruction Generated: 00000001100111000011010110110011
 [0] Generating.... | Completed:          88 | Instruction amounts require:         100
 Instruction type decided at time: [0]| Instruction number:          88| Instruction type:           1
+[0] | ID:          88 | Instruction Generated: 00010101000001010101011010000011
 [0] Generating.... | Completed:          89 | Instruction amounts require:         100
-Instruction type decided at time: [0]| Instruction number:          89| Instruction type:           1
+Instruction type decided at time: [0]| Instruction number:          89| Instruction type:           0
+[0] | ID:          89 | Instruction Generated: 01000001000100110010010110110011
 [0] Generating.... | Completed:          90 | Instruction amounts require:         100
-Instruction type decided at time: [0]| Instruction number:          90| Instruction type:           1
+Instruction type decided at time: [0]| Instruction number:          90| Instruction type:           0
+[0] | ID:          90 | Instruction Generated: 00000001001101010011010100110011
 [0] Generating.... | Completed:          91 | Instruction amounts require:         100
-Instruction type decided at time: [0]| Instruction number:          91| Instruction type:           1
+Instruction type decided at time: [0]| Instruction number:          91| Instruction type:           0
+[0] | ID:          91 | Instruction Generated: 01000001011000111101011100110011
 [0] Generating.... | Completed:          92 | Instruction amounts require:         100
-Instruction type decided at time: [0]| Instruction number:          92| Instruction type:           1
+Instruction type decided at time: [0]| Instruction number:          92| Instruction type:           0
+[0] | ID:          92 | Instruction Generated: 01000000101001000110001100110011
 [0] Generating.... | Completed:          93 | Instruction amounts require:         100
 Instruction type decided at time: [0]| Instruction number:          93| Instruction type:           0
+[0] | ID:          93 | Instruction Generated: 00000000100110100101111110110011
 [0] Generating.... | Completed:          94 | Instruction amounts require:         100
 Instruction type decided at time: [0]| Instruction number:          94| Instruction type:           1
+[0] | ID:          94 | Instruction Generated: 00110111111110010101111100010011
 [0] Generating.... | Completed:          95 | Instruction amounts require:         100
 Instruction type decided at time: [0]| Instruction number:          95| Instruction type:           1
+[0] | ID:          95 | Instruction Generated: 00100100101101010010001100000011
 [0] Generating.... | Completed:          96 | Instruction amounts require:         100
 Instruction type decided at time: [0]| Instruction number:          96| Instruction type:           0
+[0] | ID:          96 | Instruction Generated: 00000001010111110011101010110011
 [0] Generating.... | Completed:          97 | Instruction amounts require:         100
 Instruction type decided at time: [0]| Instruction number:          97| Instruction type:           1
+[0] | ID:          97 | Instruction Generated: 10010001010011010001010000000011
 [0] Generating.... | Completed:          98 | Instruction amounts require:         100
 Instruction type decided at time: [0]| Instruction number:          98| Instruction type:           1
+[0] | ID:          98 | Instruction Generated: 11100001010110101010100110000011
 [0] Generating.... | Completed:          99 | Instruction amounts require:         100
 Instruction type decided at time: [0]| Instruction number:          99| Instruction type:           1
+[0] | ID:          99 | Instruction Generated: 10101111010111100001110000010011
 [0] Generation finished successfully with         100 instructions
 Instruction type decided at time: [0]| Instruction number:         100| Instruction type:           0
+[0] | ID:         100 | Instruction Generated: 01000001011111001100001010110011
+[0] Waiting....
+[0] Instructions successfully saved to file: instruction0.mem
+[0] Driver is waiting......
+Warning: Fail! PCSel from Exe to MA: Expected: x, Received: 0
+Time: 5 ns  Iteration: 3  Process: /$unit_Agent_sv_3924725293/Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  Scope: $unit_Agent_sv_3924725293.Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  File: D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sim_1/new/Assertion.sv Line: 95
+Warning: Fail! RegWEn from Exe to MA: Expected: x, Received: 0
+Time: 5 ns  Iteration: 3  Process: /$unit_Agent_sv_3924725293/Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  Scope: $unit_Agent_sv_3924725293.Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  File: D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sim_1/new/Assertion.sv Line: 96
+Warning: Fail! MemRW from Exe to MA: Expected: x, Received: 0
+Time: 5 ns  Iteration: 3  Process: /$unit_Agent_sv_3924725293/Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  Scope: $unit_Agent_sv_3924725293.Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  File: D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sim_1/new/Assertion.sv Line: 97
+Warning: Fail! WBSel from Exe to MA: Expected: x, Received: 0
+Time: 5 ns  Iteration: 3  Process: /$unit_Agent_sv_3924725293/Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  Scope: $unit_Agent_sv_3924725293.Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  File: D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sim_1/new/Assertion.sv Line: 98
+Warning: Fail! PCSel from MA to WB: Expected: x, Received: x
+Time: 5 ns  Iteration: 3  Process: /$unit_Agent_sv_3924725293/Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  Scope: $unit_Agent_sv_3924725293.Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  File: D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sim_1/new/Assertion.sv Line: 104
+Warning: Fail! RegWEn from MA to WB: Expected: x, Received: x
+Time: 5 ns  Iteration: 3  Process: /$unit_Agent_sv_3924725293/Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  Scope: $unit_Agent_sv_3924725293.Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  File: D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sim_1/new/Assertion.sv Line: 105
+Warning: Fail! WBSel from MA to WB: Expected: x, Received: x
+Time: 5 ns  Iteration: 3  Process: /$unit_Agent_sv_3924725293/Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  Scope: $unit_Agent_sv_3924725293.Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  File: D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sim_1/new/Assertion.sv Line: 106
+Warning: Fail! PCSel from WB to IF: Expected: x, Received: x
+Time: 5 ns  Iteration: 3  Process: /$unit_Agent_sv_3924725293/Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  Scope: $unit_Agent_sv_3924725293.Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  File: D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sim_1/new/Assertion.sv Line: 111
+Warning: Fail! RegWEn from WB to IF: Expected: x, Received: x
+Time: 5 ns  Iteration: 3  Process: /$unit_Agent_sv_3924725293/Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  Scope: $unit_Agent_sv_3924725293.Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  File: D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sim_1/new/Assertion.sv Line: 112
+[5000] Driver is waiting......
+[1015000] Reloading instruction0.mem
+[1015000] Reset RISC_V Processor......
+[1025000] Loading Instructions to RISC_V processor ......
+Memory dumped to IMEM_expose.mem successfully.
+Memory dumped to REGFILE_expose.mem successfully.
+Memory dumped to DMEM_expose.mem successfully.
+WARNING: Too many words specified in data file IMEM_expose.mem
+[1035000] Saving Current PC:     0 and Instruction: 00000100101011111111000000010011......
+[1045000] Saving Data Read 0:         31, Data Read 1:         10 and Immediate:         74......
+[1055000] Saving ALU Result:         41
+Warning: Fail! RegWEn from Exe to MA: Expected: 0, Received: 1
+Time: 1055 ns  Iteration: 4  Process: /$unit_Agent_sv_3924725293/Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  Scope: $unit_Agent_sv_3924725293.Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  File: D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sim_1/new/Assertion.sv Line: 96
+Warning: Fail! WBSel from Exe to MA: Expected: 0, Received: 1
+Time: 1055 ns  Iteration: 4  Process: /$unit_Agent_sv_3924725293/Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  Scope: $unit_Agent_sv_3924725293.Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  File: D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sim_1/new/Assertion.sv Line: 98
+Warning: Fail! WBSel from Exe to MA: Expected: 1, Received: 0
+Time: 1065 ns  Iteration: 4  Process: /$unit_Agent_sv_3924725293/Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  Scope: $unit_Agent_sv_3924725293.Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  File: D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sim_1/new/Assertion.sv Line: 98
+Warning: Fail! RegWEn from MA to WB: Expected: 0, Received: 1
+Time: 1065 ns  Iteration: 4  Process: /$unit_Agent_sv_3924725293/Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  Scope: $unit_Agent_sv_3924725293.Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  File: D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sim_1/new/Assertion.sv Line: 105
+Warning: Fail! WBSel from MA to WB: Expected: 0, Received: 1
+Time: 1065 ns  Iteration: 4  Process: /$unit_Agent_sv_3924725293/Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  Scope: $unit_Agent_sv_3924725293.Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  File: D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sim_1/new/Assertion.sv Line: 106
+Warning: Fail! WBSel from MA to WB: Expected: 1, Received: 0
+Time: 1075 ns  Iteration: 4  Process: /$unit_Agent_sv_3924725293/Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  Scope: $unit_Agent_sv_3924725293.Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  File: D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sim_1/new/Assertion.sv Line: 106
+Warning: Fail! RegWEn from WB to IF: Expected: 0, Received: 1
+Time: 1075 ns  Iteration: 4  Process: /$unit_Agent_sv_3924725293/Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  Scope: $unit_Agent_sv_3924725293.Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  File: D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sim_1/new/Assertion.sv Line: 112
+Warning: Fail! WBSel from Exe to MA: Expected: 0, Received: 1
+Time: 1085 ns  Iteration: 4  Process: /$unit_Agent_sv_3924725293/Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  Scope: $unit_Agent_sv_3924725293.Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  File: D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sim_1/new/Assertion.sv Line: 98
+[1085000] Saving Write Back Output4294965631
+[1095000] Saving Write Back Output         0
+Warning: Fail! WBSel from MA to WB: Expected: 0, Received: 1
+Time: 1095 ns  Iteration: 4  Process: /$unit_Agent_sv_3924725293/Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  Scope: $unit_Agent_sv_3924725293.Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  File: D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sim_1/new/Assertion.sv Line: 106
+[1105000] Saving Write Back Output         0
+[1115000] Saving Write Back Output         0
+[1125000] Saving Write Back Output         0
+[1135000] Saving Write Back Output        21
+Warning: Fail! WBSel from Exe to MA: Expected: 1, Received: 0
+Time: 1135 ns  Iteration: 4  Process: /$unit_Agent_sv_3924725293/Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  Scope: $unit_Agent_sv_3924725293.Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  File: D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sim_1/new/Assertion.sv Line: 98
+Warning: Fail! WBSel from Exe to MA: Expected: 0, Received: 1
+Time: 1145 ns  Iteration: 4  Process: /$unit_Agent_sv_3924725293/Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  Scope: $unit_Agent_sv_3924725293.Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  File: D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sim_1/new/Assertion.sv Line: 98
+Warning: Fail! WBSel from MA to WB: Expected: 1, Received: 0
+Time: 1145 ns  Iteration: 4  Process: /$unit_Agent_sv_3924725293/Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  Scope: $unit_Agent_sv_3924725293.Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  File: D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sim_1/new/Assertion.sv Line: 106
+[1145000] Saving Write Back Output        16
+[1155000] Saving Write Back Output4294966826
+Warning: Fail! WBSel from MA to WB: Expected: 0, Received: 1
+Time: 1155 ns  Iteration: 4  Process: /$unit_Agent_sv_3924725293/Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  Scope: $unit_Agent_sv_3924725293.Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  File: D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sim_1/new/Assertion.sv Line: 106
+[1165000] Saving Write Back Output         0
+[1175000] Saving Write Back Output         1
+Warning: Fail! WBSel from Exe to MA: Expected: 1, Received: 0
+Time: 1175 ns  Iteration: 4  Process: /$unit_Agent_sv_3924725293/Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  Scope: $unit_Agent_sv_3924725293.Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  File: D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sim_1/new/Assertion.sv Line: 98
+Warning: Fail! WBSel from Exe to MA: Expected: 0, Received: 1
+Time: 1185 ns  Iteration: 4  Process: /$unit_Agent_sv_3924725293/Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  Scope: $unit_Agent_sv_3924725293.Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  File: D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sim_1/new/Assertion.sv Line: 98
+Warning: Fail! WBSel from MA to WB: Expected: 1, Received: 0
+Time: 1185 ns  Iteration: 4  Process: /$unit_Agent_sv_3924725293/Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  Scope: $unit_Agent_sv_3924725293.Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  File: D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sim_1/new/Assertion.sv Line: 106
+[1185000] Saving Write Back Output        10
+[1195000] Saving Write Back Output        12
+Warning: Fail! WBSel from MA to WB: Expected: 0, Received: 1
+Time: 1195 ns  Iteration: 4  Process: /$unit_Agent_sv_3924725293/Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  Scope: $unit_Agent_sv_3924725293.Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  File: D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sim_1/new/Assertion.sv Line: 106
+[1205000] Saving Write Back Output         0
+[1215000] Saving Write Back Output         1
+Warning: Fail! WBSel from Exe to MA: Expected: 1, Received: 0
+Time: 1215 ns  Iteration: 4  Process: /$unit_Agent_sv_3924725293/Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  Scope: $unit_Agent_sv_3924725293.Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  File: D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sim_1/new/Assertion.sv Line: 98
+Warning: Fail! WBSel from MA to WB: Expected: 1, Received: 0
+Time: 1225 ns  Iteration: 4  Process: /$unit_Agent_sv_3924725293/Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  Scope: $unit_Agent_sv_3924725293.Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  File: D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sim_1/new/Assertion.sv Line: 106
+[1225000] Saving Write Back Output        13
+[1235000] Saving Write Back Output       950
+Warning: Fail! WBSel from Exe to MA: Expected: 0, Received: 1
+Time: 1235 ns  Iteration: 4  Process: /$unit_Agent_sv_3924725293/Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  Scope: $unit_Agent_sv_3924725293.Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  File: D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sim_1/new/Assertion.sv Line: 98
+Warning: Fail! WBSel from MA to WB: Expected: 0, Received: 1
+Time: 1245 ns  Iteration: 4  Process: /$unit_Agent_sv_3924725293/Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  Scope: $unit_Agent_sv_3924725293.Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  File: D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sim_1/new/Assertion.sv Line: 106
+[1245000] Saving Write Back Output         0
+[1255000] Saving Write Back Output         0
+[1265000] Saving Write Back Output     13312
+[1275000] Saving Write Back Output        10
+Warning: Fail! WBSel from Exe to MA: Expected: 1, Received: 0
+Time: 1275 ns  Iteration: 4  Process: /$unit_Agent_sv_3924725293/Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  Scope: $unit_Agent_sv_3924725293.Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  File: D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sim_1/new/Assertion.sv Line: 98
+Warning: Fail! WBSel from Exe to MA: Expected: 0, Received: 1
+Time: 1285 ns  Iteration: 4  Process: /$unit_Agent_sv_3924725293/Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  Scope: $unit_Agent_sv_3924725293.Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  File: D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sim_1/new/Assertion.sv Line: 98
+Warning: Fail! WBSel from MA to WB: Expected: 1, Received: 0
+Time: 1285 ns  Iteration: 4  Process: /$unit_Agent_sv_3924725293/Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  Scope: $unit_Agent_sv_3924725293.Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  File: D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sim_1/new/Assertion.sv Line: 106
+[1285000] Saving Write Back Output        27
+[1295000] Saving Write Back Output        26
+Warning: Fail! WBSel from MA to WB: Expected: 0, Received: 1
+Time: 1295 ns  Iteration: 4  Process: /$unit_Agent_sv_3924725293/Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  Scope: $unit_Agent_sv_3924725293.Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  File: D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sim_1/new/Assertion.sv Line: 106
+[1305000] Saving Write Back Output         0
+[1315000] Saving Write Back Output         1
+Warning: Fail! WBSel from Exe to MA: Expected: 1, Received: 0
+Time: 1315 ns  Iteration: 4  Process: /$unit_Agent_sv_3924725293/Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  Scope: $unit_Agent_sv_3924725293.Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  File: D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sim_1/new/Assertion.sv Line: 98
+Warning: Fail! WBSel from Exe to MA: Expected: 0, Received: 1
+Time: 1325 ns  Iteration: 4  Process: /$unit_Agent_sv_3924725293/Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  Scope: $unit_Agent_sv_3924725293.Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  File: D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sim_1/new/Assertion.sv Line: 98
+Warning: Fail! WBSel from MA to WB: Expected: 1, Received: 0
+Time: 1325 ns  Iteration: 4  Process: /$unit_Agent_sv_3924725293/Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  Scope: $unit_Agent_sv_3924725293.Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  File: D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sim_1/new/Assertion.sv Line: 106
+[1325000] Saving Write Back Output        17
+[1335000] Saving Write Back Output4294966883
+Warning: Fail! WBSel from Exe to MA: Expected: 1, Received: 0
+Time: 1335 ns  Iteration: 4  Process: /$unit_Agent_sv_3924725293/Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  Scope: $unit_Agent_sv_3924725293.Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  File: D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sim_1/new/Assertion.sv Line: 98
+Warning: Fail! WBSel from MA to WB: Expected: 0, Received: 1
+Time: 1335 ns  Iteration: 4  Process: /$unit_Agent_sv_3924725293/Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  Scope: $unit_Agent_sv_3924725293.Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  File: D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sim_1/new/Assertion.sv Line: 106
+Warning: Fail! WBSel from Exe to MA: Expected: 0, Received: 1
+Time: 1345 ns  Iteration: 4  Process: /$unit_Agent_sv_3924725293/Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  Scope: $unit_Agent_sv_3924725293.Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  File: D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sim_1/new/Assertion.sv Line: 98
+Warning: Fail! WBSel from MA to WB: Expected: 1, Received: 0
+Time: 1345 ns  Iteration: 4  Process: /$unit_Agent_sv_3924725293/Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  Scope: $unit_Agent_sv_3924725293.Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  File: D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sim_1/new/Assertion.sv Line: 106
+[1345000] Saving Write Back Output         0
+[1355000] Saving Write Back Output        26
+Warning: Fail! WBSel from MA to WB: Expected: 0, Received: 1
+Time: 1355 ns  Iteration: 4  Process: /$unit_Agent_sv_3924725293/Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  Scope: $unit_Agent_sv_3924725293.Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  File: D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sim_1/new/Assertion.sv Line: 106
+[1365000] Saving Write Back Output         0
+[1375000] Saving Write Back Output         0
+[1385000] Saving Write Back Output        28
+[1395000] Saving Write Back Output         8
+[1405000] Saving Write Back Output         1
+[1415000] Saving Write Back Output         6
+[1425000] Saving Write Back Output         4
+[1435000] Saving Write Back Output         0
+[1445000] Saving Write Back Output         0
+[1455000] Saving Write Back Output         1
+[1465000] Saving Write Back Output         0
+[1475000] Saving Write Back Output         0
+[1485000] Saving Write Back Output         1
+[1495000] Saving Write Back Output         0
+[1505000] Saving Write Back Output         3
+[1515000] Saving Write Back Output         2
+[1525000] Saving Write Back Output        18
+[1535000] Saving Write Back Output        64
+Warning: Fail! WBSel from Exe to MA: Expected: 1, Received: 0
+Time: 1535 ns  Iteration: 4  Process: /$unit_Agent_sv_3924725293/Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  Scope: $unit_Agent_sv_3924725293.Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  File: D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sim_1/new/Assertion.sv Line: 98
+Warning: Fail! WBSel from MA to WB: Expected: 1, Received: 0
+Time: 1545 ns  Iteration: 4  Process: /$unit_Agent_sv_3924725293/Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  Scope: $unit_Agent_sv_3924725293.Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  File: D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sim_1/new/Assertion.sv Line: 106
+[1545000] Saving Write Back Output        25
+[1555000] Saving Write Back Output      1320
+Warning: Fail! WBSel from Exe to MA: Expected: 0, Received: 1
+Time: 1555 ns  Iteration: 4  Process: /$unit_Agent_sv_3924725293/Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  Scope: $unit_Agent_sv_3924725293.Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  File: D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sim_1/new/Assertion.sv Line: 98
+Warning: Fail! WBSel from MA to WB: Expected: 0, Received: 1
+Time: 1565 ns  Iteration: 4  Process: /$unit_Agent_sv_3924725293/Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  Scope: $unit_Agent_sv_3924725293.Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  File: D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sim_1/new/Assertion.sv Line: 106
+[1565000] Saving Write Back Output         0
+[1575000] Saving Write Back Output         0
+Warning: Fail! WBSel from Exe to MA: Expected: 1, Received: 0
+Time: 1585 ns  Iteration: 4  Process: /$unit_Agent_sv_3924725293/Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  Scope: $unit_Agent_sv_3924725293.Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  File: D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sim_1/new/Assertion.sv Line: 98
+[1585000] Saving Write Back Output         1
+[1595000] Saving Write Back Output        16
+Warning: Fail! WBSel from Exe to MA: Expected: 0, Received: 1
+Time: 1595 ns  Iteration: 4  Process: /$unit_Agent_sv_3924725293/Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  Scope: $unit_Agent_sv_3924725293.Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  File: D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sim_1/new/Assertion.sv Line: 98
+Warning: Fail! WBSel from MA to WB: Expected: 1, Received: 0
+Time: 1595 ns  Iteration: 4  Process: /$unit_Agent_sv_3924725293/Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  Scope: $unit_Agent_sv_3924725293.Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  File: D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sim_1/new/Assertion.sv Line: 106
+Warning: Fail! WBSel from MA to WB: Expected: 0, Received: 1
+Time: 1605 ns  Iteration: 4  Process: /$unit_Agent_sv_3924725293/Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  Scope: $unit_Agent_sv_3924725293.Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  File: D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sim_1/new/Assertion.sv Line: 106
+[1605000] Saving Write Back Output        29
+[1615000] Saving Write Back Output         0
+Warning: Fail! WBSel from Exe to MA: Expected: 1, Received: 0
+Time: 1625 ns  Iteration: 4  Process: /$unit_Agent_sv_3924725293/Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  Scope: $unit_Agent_sv_3924725293.Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  File: D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sim_1/new/Assertion.sv Line: 98
+[1625000] Saving Write Back Output         0
+[1635000] Saving Write Back Output         1
+Warning: Fail! WBSel from MA to WB: Expected: 1, Received: 0
+Time: 1635 ns  Iteration: 4  Process: /$unit_Agent_sv_3924725293/Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  Scope: $unit_Agent_sv_3924725293.Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  File: D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sim_1/new/Assertion.sv Line: 106
+Warning: Fail! WBSel from Exe to MA: Expected: 0, Received: 1
+Time: 1645 ns  Iteration: 4  Process: /$unit_Agent_sv_3924725293/Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  Scope: $unit_Agent_sv_3924725293.Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  File: D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sim_1/new/Assertion.sv Line: 98
+[1645000] Saving Write Back Output      1403
+[1655000] Saving Write Back Output         0
+Warning: Fail! WBSel from Exe to MA: Expected: 1, Received: 0
+Time: 1655 ns  Iteration: 4  Process: /$unit_Agent_sv_3924725293/Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  Scope: $unit_Agent_sv_3924725293.Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  File: D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sim_1/new/Assertion.sv Line: 98
+Warning: Fail! WBSel from MA to WB: Expected: 0, Received: 1
+Time: 1655 ns  Iteration: 4  Process: /$unit_Agent_sv_3924725293/Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  Scope: $unit_Agent_sv_3924725293.Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  File: D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sim_1/new/Assertion.sv Line: 106
+Warning: Fail! WBSel from Exe to MA: Expected: 0, Received: 1
+Time: 1665 ns  Iteration: 4  Process: /$unit_Agent_sv_3924725293/Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  Scope: $unit_Agent_sv_3924725293.Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  File: D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sim_1/new/Assertion.sv Line: 98
+Warning: Fail! WBSel from MA to WB: Expected: 1, Received: 0
+Time: 1665 ns  Iteration: 4  Process: /$unit_Agent_sv_3924725293/Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  Scope: $unit_Agent_sv_3924725293.Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  File: D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sim_1/new/Assertion.sv Line: 106
+[1665000] Saving Write Back Output         0
+[1675000] Saving Write Back Output        15
+Warning: Fail! WBSel from MA to WB: Expected: 0, Received: 1
+Time: 1675 ns  Iteration: 4  Process: /$unit_Agent_sv_3924725293/Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  Scope: $unit_Agent_sv_3924725293.Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  File: D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sim_1/new/Assertion.sv Line: 106
+[1685000] Saving Write Back Output         0
+[1695000] Saving Write Back Output        13
+[1705000] Saving Write Back Output     24576
+[1715000] Saving Write Back Output         6
+Warning: Fail! WBSel from Exe to MA: Expected: 1, Received: 0
+Time: 1725 ns  Iteration: 4  Process: /$unit_Agent_sv_3924725293/Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  Scope: $unit_Agent_sv_3924725293.Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  File: D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sim_1/new/Assertion.sv Line: 98
+[1725000] Saving Write Back Output         1
+[1735000] Saving Write Back Output      1032
+Warning: Fail! WBSel from Exe to MA: Expected: 0, Received: 1
+Time: 1735 ns  Iteration: 4  Process: /$unit_Agent_sv_3924725293/Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  Scope: $unit_Agent_sv_3924725293.Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  File: D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sim_1/new/Assertion.sv Line: 98
+Warning: Fail! WBSel from MA to WB: Expected: 1, Received: 0
+Time: 1735 ns  Iteration: 4  Process: /$unit_Agent_sv_3924725293/Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  Scope: $unit_Agent_sv_3924725293.Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  File: D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sim_1/new/Assertion.sv Line: 106
+Warning: Fail! WBSel from Exe to MA: Expected: 1, Received: 0
+Time: 1745 ns  Iteration: 4  Process: /$unit_Agent_sv_3924725293/Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  Scope: $unit_Agent_sv_3924725293.Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  File: D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sim_1/new/Assertion.sv Line: 98
+Warning: Fail! WBSel from MA to WB: Expected: 0, Received: 1
+Time: 1745 ns  Iteration: 4  Process: /$unit_Agent_sv_3924725293/Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  Scope: $unit_Agent_sv_3924725293.Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  File: D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sim_1/new/Assertion.sv Line: 106
+[1745000] Saving Write Back Output        29
+[1755000] Saving Write Back Output         0
+Warning: Fail! WBSel from Exe to MA: Expected: 0, Received: 1
+Time: 1755 ns  Iteration: 4  Process: /$unit_Agent_sv_3924725293/Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  Scope: $unit_Agent_sv_3924725293.Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  File: D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sim_1/new/Assertion.sv Line: 98
+Warning: Fail! WBSel from MA to WB: Expected: 1, Received: 0
+Time: 1755 ns  Iteration: 4  Process: /$unit_Agent_sv_3924725293/Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  Scope: $unit_Agent_sv_3924725293.Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  File: D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sim_1/new/Assertion.sv Line: 106
+Warning: Fail! WBSel from MA to WB: Expected: 0, Received: 1
+Time: 1765 ns  Iteration: 4  Process: /$unit_Agent_sv_3924725293/Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  Scope: $unit_Agent_sv_3924725293.Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  File: D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sim_1/new/Assertion.sv Line: 106
+[1765000] Saving Write Back Output        37
+[1775000] Saving Write Back Output         0
+Warning: Fail! WBSel from Exe to MA: Expected: 1, Received: 0
+Time: 1775 ns  Iteration: 4  Process: /$unit_Agent_sv_3924725293/Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  Scope: $unit_Agent_sv_3924725293.Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  File: D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sim_1/new/Assertion.sv Line: 98
+Warning: Fail! WBSel from Exe to MA: Expected: 0, Received: 1
+Time: 1785 ns  Iteration: 4  Process: /$unit_Agent_sv_3924725293/Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  Scope: $unit_Agent_sv_3924725293.Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  File: D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sim_1/new/Assertion.sv Line: 98
+Warning: Fail! WBSel from MA to WB: Expected: 1, Received: 0
+Time: 1785 ns  Iteration: 4  Process: /$unit_Agent_sv_3924725293/Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  Scope: $unit_Agent_sv_3924725293.Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  File: D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sim_1/new/Assertion.sv Line: 106
+[1785000] Saving Write Back Output        32
+[1795000] Saving Write Back Output      1756
+Warning: Fail! WBSel from Exe to MA: Expected: 1, Received: 0
+Time: 1795 ns  Iteration: 4  Process: /$unit_Agent_sv_3924725293/Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  Scope: $unit_Agent_sv_3924725293.Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  File: D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sim_1/new/Assertion.sv Line: 98
+Warning: Fail! WBSel from MA to WB: Expected: 0, Received: 1
+Time: 1795 ns  Iteration: 4  Process: /$unit_Agent_sv_3924725293/Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  Scope: $unit_Agent_sv_3924725293.Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  File: D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sim_1/new/Assertion.sv Line: 106
+Warning: Fail! WBSel from Exe to MA: Expected: 0, Received: 1
+Time: 1805 ns  Iteration: 4  Process: /$unit_Agent_sv_3924725293/Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  Scope: $unit_Agent_sv_3924725293.Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  File: D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sim_1/new/Assertion.sv Line: 98
+Warning: Fail! WBSel from MA to WB: Expected: 1, Received: 0
+Time: 1805 ns  Iteration: 4  Process: /$unit_Agent_sv_3924725293/Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  Scope: $unit_Agent_sv_3924725293.Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  File: D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sim_1/new/Assertion.sv Line: 106
+[1805000] Saving Write Back Output         0
+[1815000] Saving Write Back Output        33
+Warning: Fail! WBSel from MA to WB: Expected: 0, Received: 1
+Time: 1815 ns  Iteration: 4  Process: /$unit_Agent_sv_3924725293/Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  Scope: $unit_Agent_sv_3924725293.Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  File: D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sim_1/new/Assertion.sv Line: 106
+[1825000] Saving Write Back Output         0
+[1835000] Saving Write Back Output         1
+Warning: Fail! WBSel from Exe to MA: Expected: 1, Received: 0
+Time: 1845 ns  Iteration: 4  Process: /$unit_Agent_sv_3924725293/Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  Scope: $unit_Agent_sv_3924725293.Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  File: D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sim_1/new/Assertion.sv Line: 98
+[1845000] Saving Write Back Output      1042
+[1855000] Saving Write Back Output         0
+Warning: Fail! WBSel from MA to WB: Expected: 1, Received: 0
+Time: 1855 ns  Iteration: 4  Process: /$unit_Agent_sv_3924725293/Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  Scope: $unit_Agent_sv_3924725293.Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  File: D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sim_1/new/Assertion.sv Line: 106
+Warning: Fail! WBSel from Exe to MA: Expected: 0, Received: 1
+Time: 1865 ns  Iteration: 4  Process: /$unit_Agent_sv_3924725293/Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  Scope: $unit_Agent_sv_3924725293.Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  File: D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sim_1/new/Assertion.sv Line: 98
+[1865000] Saving Write Back Output        31
+[1875000] Saving Write Back Output         0
+Warning: Fail! WBSel from MA to WB: Expected: 0, Received: 1
+Time: 1875 ns  Iteration: 4  Process: /$unit_Agent_sv_3924725293/Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  Scope: $unit_Agent_sv_3924725293.Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  File: D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sim_1/new/Assertion.sv Line: 106
+[1885000] Saving Write Back Output         0
+[1895000] Saving Write Back Output       317
+[1905000] Saving Write Back Output4294965943
+[1915000] Saving Write Back Output4294965723
+Warning: Fail! WBSel from Exe to MA: Expected: 1, Received: 0
+Time: 1915 ns  Iteration: 4  Process: /$unit_Agent_sv_3924725293/Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  Scope: $unit_Agent_sv_3924725293.Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  File: D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sim_1/new/Assertion.sv Line: 98
+Warning: Fail! WBSel from Exe to MA: Expected: 0, Received: 1
+Time: 1925 ns  Iteration: 4  Process: /$unit_Agent_sv_3924725293/Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  Scope: $unit_Agent_sv_3924725293.Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  File: D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sim_1/new/Assertion.sv Line: 98
+Warning: Fail! WBSel from MA to WB: Expected: 1, Received: 0
+Time: 1925 ns  Iteration: 4  Process: /$unit_Agent_sv_3924725293/Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  Scope: $unit_Agent_sv_3924725293.Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  File: D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sim_1/new/Assertion.sv Line: 106
+[1925000] Saving Write Back Output         0
+[1935000] Saving Write Back Output         7
+Warning: Fail! WBSel from Exe to MA: Expected: 1, Received: 0
+Time: 1935 ns  Iteration: 4  Process: /$unit_Agent_sv_3924725293/Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  Scope: $unit_Agent_sv_3924725293.Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  File: D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sim_1/new/Assertion.sv Line: 98
+Warning: Fail! WBSel from MA to WB: Expected: 0, Received: 1
+Time: 1935 ns  Iteration: 4  Process: /$unit_Agent_sv_3924725293/Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  Scope: $unit_Agent_sv_3924725293.Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  File: D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sim_1/new/Assertion.sv Line: 106
+Warning: Fail! WBSel from Exe to MA: Expected: 0, Received: 1
+Time: 1945 ns  Iteration: 4  Process: /$unit_Agent_sv_3924725293/Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  Scope: $unit_Agent_sv_3924725293.Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  File: D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sim_1/new/Assertion.sv Line: 98
+Warning: Fail! WBSel from MA to WB: Expected: 1, Received: 0
+Time: 1945 ns  Iteration: 4  Process: /$unit_Agent_sv_3924725293/Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  Scope: $unit_Agent_sv_3924725293.Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  File: D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sim_1/new/Assertion.sv Line: 106
+[1945000] Saving Write Back Output         0
+[1955000] Saving Write Back Output        26
+Warning: Fail! WBSel from MA to WB: Expected: 0, Received: 1
+Time: 1955 ns  Iteration: 4  Process: /$unit_Agent_sv_3924725293/Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  Scope: $unit_Agent_sv_3924725293.Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  File: D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sim_1/new/Assertion.sv Line: 106
+[1965000] Saving Write Back Output         0
+[1975000] Saving Write Back Output         1
+[1985000] Saving Write Back Output         0
+[1995000] Saving Write Back Output        10
+Warning: Fail! WBSel from Exe to MA: Expected: 1, Received: 0
+Time: 2005 ns  Iteration: 4  Process: /$unit_Agent_sv_3924725293/Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  Scope: $unit_Agent_sv_3924725293.Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  File: D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sim_1/new/Assertion.sv Line: 98
+[2005000] Saving Write Back Output         0
+[2015000] Saving Write Back Output         0
+Warning: Fail! WBSel from Exe to MA: Expected: 0, Received: 1
+Time: 2015 ns  Iteration: 4  Process: /$unit_Agent_sv_3924725293/Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  Scope: $unit_Agent_sv_3924725293.Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  File: D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sim_1/new/Assertion.sv Line: 98
+Warning: Fail! WBSel from MA to WB: Expected: 1, Received: 0
+Time: 2015 ns  Iteration: 4  Process: /$unit_Agent_sv_3924725293/Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  Scope: $unit_Agent_sv_3924725293.Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  File: D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sim_1/new/Assertion.sv Line: 106
+Warning: Fail! WBSel from Exe to MA: Expected: 1, Received: 0
+Time: 2025 ns  Iteration: 4  Process: /$unit_Agent_sv_3924725293/Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  Scope: $unit_Agent_sv_3924725293.Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  File: D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sim_1/new/Assertion.sv Line: 98
+Warning: Fail! WBSel from MA to WB: Expected: 0, Received: 1
+Time: 2025 ns  Iteration: 4  Process: /$unit_Agent_sv_3924725293/Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  Scope: $unit_Agent_sv_3924725293.Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  File: D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sim_1/new/Assertion.sv Line: 106
+[2025000] Saving Write Back Output        21
+[2035000] Saving Write Back Output         0
+Warning: Fail! WBSel from MA to WB: Expected: 1, Received: 0
+Time: 2035 ns  Iteration: 4  Process: /$unit_Agent_sv_3924725293/Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  Scope: $unit_Agent_sv_3924725293.Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  File: D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sim_1/new/Assertion.sv Line: 106
+Warning: Fail! WBSel from Exe to MA: Expected: 0, Received: 1
+Time: 2045 ns  Iteration: 3  Process: /$unit_Agent_sv_3924725293/Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  Scope: $unit_Agent_sv_3924725293.Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  File: D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sim_1/new/Assertion.sv Line: 98
+Warning: Fail! WBSel from MA to WB: Expected: 0, Received: 1
+Time: 2055 ns  Iteration: 2  Process: /$unit_Agent_sv_3924725293/Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  Scope: $unit_Agent_sv_3924725293.Assertion(INSTRUCTION_WIDTH=32,OPERATION_NUMS=16,IMM_MODE_NUMS=8,ADDR_WIDTH=16,DATA_WIDTH=32,DMEM_DEPTH=1024,IMEM_LENGTH=65536,PC_WIDTH=16,REGFILE_DEPTH=32)::running_assertion  File: D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sim_1/new/Assertion.sv Line: 106
+[2065000] Saving Data Read 0:         25, Data Read 1:         23 and Immediate:       1047......
+[2075000] Saving Current PC:   101 and Instruction: 01000001011111001100001010110011......
+[2075000] Instruction number:           0 | PC: 0000 | Instruction bin: 00000100101011111111000000010011 | Data read 0:         31 | Data read 1:         10 | Immediate:         74 | Calculated Result:         41 | Write Back data: 00000000000000000000000000000000
+[2075000] Instruction number:           1 | PC: 0001 | Instruction bin: 10010111010101010101000000000011 | Data read 0:         10 | Data read 1:         21 | Immediate: 4294965621 | Calculated Result: 4294965631 | Write Back data: 11111111111111111111100101111111
+[2075000] Instruction number:           2 | PC: 0002 | Instruction bin: 10000110000001010000110000000011 | Data read 0:         10 | Data read 1:          0 | Immediate: 4294965344 | Calculated Result: 4294965354 | Write Back data: 00000000000000000000000000000000
+[2075000] Instruction number:           3 | PC: 0003 | Instruction bin: 00000000110001100100011010110011 | Data read 0:         12 | Data read 1:         12 | Immediate:         12 | Calculated Result:          0 | Write Back data: 00000000000000000000000000000000
+[2075000] Instruction number:           4 | PC: 0004 | Instruction bin: 00000000010000010101011000110011 | Data read 0:          2 | Data read 1:          4 | Immediate:          4 | Calculated Result:          0 | Write Back data: 00000000000000000000000000000000
+[2075000] Instruction number:           5 | PC: 0005 | Instruction bin: 00000001010000001101100010110011 | Data read 0:          1 | Data read 1:         20 | Immediate:         20 | Calculated Result:          0 | Write Back data: 00000000000000000000000000000000
+[2075000] Instruction number:           6 | PC: 0006 | Instruction bin: 11100110110001001000010010010011 | Data read 0:          9 | Data read 1:         12 | Immediate: 4294966892 | Calculated Result:         21 | Write Back data: 00000000000000000000000000010101
+[2075000] Instruction number:           7 | PC: 0007 | Instruction bin: 01111001010110010111100000010011 | Data read 0:         18 | Data read 1:         21 | Immediate:       1941 | Calculated Result:         16 | Write Back data: 00000000000000000000000000010000
+[2075000] Instruction number:           8 | PC: 0008 | Instruction bin: 11100001110001110101011100000011 | Data read 0:         14 | Data read 1:         28 | Immediate: 4294966812 | Calculated Result: 4294966826 | Write Back data: 11111111111111111111111000101010
+[2075000] Instruction number:           9 | PC: 0009 | Instruction bin: 01001000111010001101111000010011 | Data read 0:         17 | Data read 1:         14 | Immediate:       1166 | Calculated Result:          0 | Write Back data: 00000000000000000000000000000000
+[2075000] Instruction number:          10 | PC: 000a | Instruction bin: 01000001100000111010111110110011 | Data read 0:          7 | Data read 1:         24 | Immediate:       1048 | Calculated Result:          1 | Write Back data: 00000000000000000000000000000001
+[2075000] Instruction number:          11 | PC: 000b | Instruction bin: 01000000101110101000101010110011 | Data read 0:         21 | Data read 1:         11 | Immediate:       1035 | Calculated Result:         10 | Write Back data: 00000000000000000000000000001010
+[2075000] Instruction number:          12 | PC: 000c | Instruction bin: 10111000011100101100000000000011 | Data read 0:          5 | Data read 1:          7 | Immediate: 4294966151 | Calculated Result:         12 | Write Back data: 00000000000000000000000000001100
+[2075000] Instruction number:          13 | PC: 000d | Instruction bin: 00000000111000010011100100110011 | Data read 0:          2 | Data read 1:         14 | Immediate:         14 | Calculated Result:          1 | Write Back data: 00000000000000000000000000000000
+[2075000] Instruction number:          14 | PC: 000e | Instruction bin: 01000001010000000011010110110011 | Data read 0:          0 | Data read 1:         20 | Immediate:       1044 | Calculated Result:          1 | Write Back data: 00000000000000000000000000000001
+[2075000] Instruction number:          15 | PC: 000f | Instruction bin: 10100010100101100110001100010011 | Data read 0:         12 | Data read 1:          9 | Immediate: 4294965801 | Calculated Result:         13 | Write Back data: 00000000000000000000000000001101
+[2075000] Instruction number:          16 | PC: 0010 | Instruction bin: 00111010101001100001101110000011 | Data read 0:         12 | Data read 1:         10 | Immediate:        938 | Calculated Result:        950 | Write Back data: 00000000000000000000001110110110
+[2075000] Instruction number:          17 | PC: 0011 | Instruction bin: 00000001011101101100010110000011 | Data read 0:         13 | Data read 1:         23 | Immediate:         23 | Calculated Result:         36 | Write Back data: 00000000000000000000000000000000
+[2075000] Instruction number:          18 | PC: 0012 | Instruction bin: 01000001110101000010011000110011 | Data read 0:          8 | Data read 1:         29 | Immediate:       1053 | Calculated Result:          1 | Write Back data: 00000000000000000000000000000000
+[2075000] Instruction number:          19 | PC: 0013 | Instruction bin: 10010100100111010001101000010011 | Data read 0:         26 | Data read 1:          9 | Immediate: 4294965577 | Calculated Result:      13312 | Write Back data: 00000000000000000011010000000000
+[2075000] Instruction number:          20 | PC: 0014 | Instruction bin: 11001000100000010000001110010011 | Data read 0:          2 | Data read 1:          8 | Immediate: 4294966408 | Calculated Result:         10 | Write Back data: 00000000000000000000000000001010
+[2075000] Instruction number:          21 | PC: 0015 | Instruction bin: 00000000000011011000110100110011 | Data read 0:         27 | Data read 1:          0 | Immediate:          0 | Calculated Result:         27 | Write Back data: 00000000000000000000000000011011
+[2075000] Instruction number:          22 | PC: 0016 | Instruction bin: 10100010111001100000001100000011 | Data read 0:         12 | Data read 1:         14 | Immediate: 4294965806 | Calculated Result:         26 | Write Back data: 00000000000000000000000000011010
+[2075000] Instruction number:          23 | PC: 0017 | Instruction bin: 11100001110000011010100110010011 | Data read 0:          3 | Data read 1:         28 | Immediate: 4294966812 | Calculated Result:          1 | Write Back data: 00000000000000000000000000000000
+[2075000] Instruction number:          24 | PC: 0018 | Instruction bin: 01000000001000000011101110110011 | Data read 0:          0 | Data read 1:          2 | Immediate:       1026 | Calculated Result:          1 | Write Back data: 00000000000000000000000000000001
+[2075000] Instruction number:          25 | PC: 0019 | Instruction bin: 10101001011100110100100110010011 | Data read 0:          6 | Data read 1:         23 | Immediate: 4294965911 | Calculated Result:         17 | Write Back data: 00000000000000000000000000010001
+[2075000] Instruction number:          26 | PC: 001a | Instruction bin: 11100100011011101000101010000011 | Data read 0:         29 | Data read 1:          6 | Immediate: 4294966854 | Calculated Result: 4294966883 | Write Back data: 11111111111111111111111001100011
+[2075000] Instruction number:          27 | PC: 001b | Instruction bin: 00000000010000111111001110110011 | Data read 0:          7 | Data read 1:          4 | Immediate:          4 | Calculated Result:          4 | Write Back data: 00000000000000000000000000000000
+[2075000] Instruction number:          28 | PC: 001c | Instruction bin: 01100010000011010101010110000011 | Data read 0:         26 | Data read 1:          0 | Immediate:       1568 | Calculated Result:         26 | Write Back data: 00000000000000000000000000011010
+[2075000] Instruction number:          29 | PC: 001d | Instruction bin: 10010000010100010110010010010011 | Data read 0:          2 | Data read 1:          5 | Immediate: 4294965509 | Calculated Result: 4294965511 | Write Back data: 00000000000000000000000000000000
+[2075000] Instruction number:          30 | PC: 001e | Instruction bin: 00000000000100101010001000110011 | Data read 0:          5 | Data read 1:          1 | Immediate:          1 | Calculated Result:          0 | Write Back data: 00000000000000000000000000000000
+[2075000] Instruction number:          31 | PC: 001f | Instruction bin: 00000001001101001000001110110011 | Data read 0:          9 | Data read 1:         19 | Immediate:         19 | Calculated Result:         28 | Write Back data: 00000000000000000000000000011100
+[2075000] Instruction number:          32 | PC: 0020 | Instruction bin: 00000000100101000111101100110011 | Data read 0:          8 | Data read 1:          9 | Immediate:          9 | Calculated Result:          8 | Write Back data: 00000000000000000000000000001000
+[2075000] Instruction number:          33 | PC: 0021 | Instruction bin: 01100101001101001111101100010011 | Data read 0:          9 | Data read 1:         19 | Immediate:       1619 | Calculated Result:          1 | Write Back data: 00000000000000000000000000000001
+[2075000] Instruction number:          34 | PC: 0022 | Instruction bin: 00000000111010110111001010110011 | Data read 0:         22 | Data read 1:         14 | Immediate:         14 | Calculated Result:          6 | Write Back data: 00000000000000000000000000000110
+[2075000] Instruction number:          35 | PC: 0023 | Instruction bin: 01000000010010111111000010110011 | Data read 0:         23 | Data read 1:          4 | Immediate:       1028 | Calculated Result:          4 | Write Back data: 00000000000000000000000000000100
+[2075000] Instruction number:          36 | PC: 0024 | Instruction bin: 11110111010011110010010110010011 | Data read 0:         30 | Data read 1:         20 | Immediate: 4294967156 | Calculated Result:          0 | Write Back data: 00000000000000000000000000000000
+[2075000] Instruction number:          37 | PC: 0025 | Instruction bin: 01000000000000111111001010110011 | Data read 0:          7 | Data read 1:          0 | Immediate:       1024 | Calculated Result:          0 | Write Back data: 00000000000000000000000000000000
+[2075000] Instruction number:          38 | PC: 0026 | Instruction bin: 01000001100100111111111000110011 | Data read 0:          7 | Data read 1:         25 | Immediate:       1049 | Calculated Result:          1 | Write Back data: 00000000000000000000000000000001
+[2075000] Instruction number:          39 | PC: 0027 | Instruction bin: 00000000011110100011100110110011 | Data read 0:         20 | Data read 1:          7 | Immediate:          7 | Calculated Result:          0 | Write Back data: 00000000000000000000000000000000
+[2075000] Instruction number:          40 | PC: 0028 | Instruction bin: 00000000000110110010101100110011 | Data read 0:         22 | Data read 1:          1 | Immediate:          1 | Calculated Result:          0 | Write Back data: 00000000000000000000000000000000
+[2075000] Instruction number:          41 | PC: 0029 | Instruction bin: 01101001100001101010011010010011 | Data read 0:         13 | Data read 1:         24 | Immediate:       1688 | Calculated Result:          1 | Write Back data: 00000000000000000000000000000001
+[2075000] Instruction number:          42 | PC: 002a | Instruction bin: 01000000000000000101101000110011 | Data read 0:          0 | Data read 1:          0 | Immediate:       1024 | Calculated Result:          0 | Write Back data: 00000000000000000000000000000000
+[2075000] Instruction number:          43 | PC: 002b | Instruction bin: 01000001001110110000100100110011 | Data read 0:         22 | Data read 1:         19 | Immediate:       1043 | Calculated Result:          3 | Write Back data: 00000000000000000000000000000011
+[2075000] Instruction number:          44 | PC: 002c | Instruction bin: 01111100101001000100010100010011 | Data read 0:          8 | Data read 1:         10 | Immediate:       1994 | Calculated Result:          2 | Write Back data: 00000000000000000000000000000010
+[2075000] Instruction number:          45 | PC: 002d | Instruction bin: 00000001111110010111111110110011 | Data read 0:         18 | Data read 1:         31 | Immediate:         31 | Calculated Result:         18 | Write Back data: 00000000000000000000000000010010
+[2075000] Instruction number:          46 | PC: 002e | Instruction bin: 01000000010000100001011100110011 | Data read 0:          4 | Data read 1:          4 | Immediate:       1028 | Calculated Result:         64 | Write Back data: 00000000000000000000000001000000
+[2075000] Instruction number:          47 | PC: 002f | Instruction bin: 00100001111000111100100010010011 | Data read 0:          7 | Data read 1:         30 | Immediate:        542 | Calculated Result:         25 | Write Back data: 00000000000000000000000000011001
+[2075000] Instruction number:          48 | PC: 0030 | Instruction bin: 01010000100111111000110010000011 | Data read 0:         31 | Data read 1:          9 | Immediate:       1289 | Calculated Result:       1320 | Write Back data: 00000000000000000000010100101000
+[2075000] Instruction number:          49 | PC: 0031 | Instruction bin: 10101001110100000010001100000011 | Data read 0:          0 | Data read 1:         29 | Immediate: 4294965917 | Calculated Result: 4294965917 | Write Back data: 00000000000000000000000000000000
+[2075000] Instruction number:          50 | PC: 0032 | Instruction bin: 01111001000111010011111000010011 | Data read 0:         26 | Data read 1:         17 | Immediate:       1937 | Calculated Result:          1 | Write Back data: 00000000000000000000000000000000
+[2075000] Instruction number:          51 | PC: 0033 | Instruction bin: 11010100100101111010110000010011 | Data read 0:         15 | Data read 1:          9 | Immediate: 4294966601 | Calculated Result:          1 | Write Back data: 00000000000000000000000000000001
+[2075000] Instruction number:          52 | PC: 0034 | Instruction bin: 00000001100110110111001010110011 | Data read 0:         22 | Data read 1:         25 | Immediate:         25 | Calculated Result:         16 | Write Back data: 00000000000000000000000000010000
+[2075000] Instruction number:          53 | PC: 0035 | Instruction bin: 11001100011110110101010000000011 | Data read 0:         22 | Data read 1:          7 | Immediate: 4294966471 | Calculated Result:         29 | Write Back data: 00000000000000000000000000011101
+[2075000] Instruction number:          54 | PC: 0036 | Instruction bin: 01000000000100001011110000110011 | Data read 0:          1 | Data read 1:          1 | Immediate:       1025 | Calculated Result:          1 | Write Back data: 00000000000000000000000000000000
+[2075000] Instruction number:          55 | PC: 0037 | Instruction bin: 00001111001010101011101010010011 | Data read 0:         21 | Data read 1:         18 | Immediate:        242 | Calculated Result:          0 | Write Back data: 00000000000000000000000000000000
+[2075000] Instruction number:          56 | PC: 0038 | Instruction bin: 01111111010110000011111000010011 | Data read 0:         16 | Data read 1:         21 | Immediate:       2037 | Calculated Result:          1 | Write Back data: 00000000000000000000000000000001
+[2075000] Instruction number:          57 | PC: 0039 | Instruction bin: 01010111001101000001000110000011 | Data read 0:          8 | Data read 1:         19 | Immediate:       1395 | Calculated Result:       1403 | Write Back data: 00000000000000000000010101111011
+[2075000] Instruction number:          58 | PC: 003a | Instruction bin: 11000011101001000101001100000011 | Data read 0:          8 | Data read 1:         26 | Immediate: 4294966330 | Calculated Result: 4294966338 | Write Back data: 00000000000000000000000000000000
+[2075000] Instruction number:          59 | PC: 003b | Instruction bin: 00000001010010011100110000110011 | Data read 0:         19 | Data read 1:         20 | Immediate:         20 | Calculated Result:          7 | Write Back data: 00000000000000000000000000000000
+[2075000] Instruction number:          60 | PC: 003c | Instruction bin: 00101010101100100001010000000011 | Data read 0:          4 | Data read 1:         11 | Immediate:        683 | Calculated Result:         15 | Write Back data: 00000000000000000000000000001111
+[2075000] Instruction number:          61 | PC: 003d | Instruction bin: 00000001010110010010010010110011 | Data read 0:         18 | Data read 1:         21 | Immediate:         21 | Calculated Result:          1 | Write Back data: 00000000000000000000000000000000
+[2075000] Instruction number:          62 | PC: 003e | Instruction bin: 00001001111101101111000110010011 | Data read 0:         13 | Data read 1:         31 | Immediate:        159 | Calculated Result:         13 | Write Back data: 00000000000000000000000000001101
+[2075000] Instruction number:          63 | PC: 003f | Instruction bin: 00000000101101100001010010110011 | Data read 0:         12 | Data read 1:         11 | Immediate:         11 | Calculated Result:      24576 | Write Back data: 00000000000000000110000000000000
+[2075000] Instruction number:          64 | PC: 0040 | Instruction bin: 01000000011101101000110010110011 | Data read 0:         13 | Data read 1:          7 | Immediate:       1031 | Calculated Result:          6 | Write Back data: 00000000000000000000000000000110
+[2075000] Instruction number:          65 | PC: 0041 | Instruction bin: 11010101011100110010010110010011 | Data read 0:          6 | Data read 1:         23 | Immediate: 4294966615 | Calculated Result:          1 | Write Back data: 00000000000000000000000000000001
+[2075000] Instruction number:          66 | PC: 0042 | Instruction bin: 01000001010111101100101000110011 | Data read 0:         29 | Data read 1:         21 | Immediate:       1045 | Calculated Result:       1032 | Write Back data: 00000000000000000000010000001000
+[2075000] Instruction number:          67 | PC: 0043 | Instruction bin: 00001111110100000101100000000011 | Data read 0:          0 | Data read 1:         29 | Immediate:        253 | Calculated Result:         29 | Write Back data: 00000000000000000000000000011101
+[2075000] Instruction number:          68 | PC: 0044 | Instruction bin: 00000000101000010110010100110011 | Data read 0:          2 | Data read 1:         10 | Immediate:         10 | Calculated Result:         10 | Write Back data: 00000000000000000000000000000000
+[2075000] Instruction number:          69 | PC: 0045 | Instruction bin: 10111010110111000000010100000011 | Data read 0:         24 | Data read 1:         13 | Immediate: 4294966189 | Calculated Result:         37 | Write Back data: 00000000000000000000000000100101
+[2075000] Instruction number:          70 | PC: 0046 | Instruction bin: 01110010101010000001001010010011 | Data read 0:         16 | Data read 1:         10 | Immediate:       1834 | Calculated Result:          0 | Write Back data: 00000000000000000000000000000000
+[2075000] Instruction number:          71 | PC: 0047 | Instruction bin: 01011101101100101000001110010011 | Data read 0:          5 | Data read 1:         27 | Immediate:       1499 | Calculated Result:         32 | Write Back data: 00000000000000000000000000100000
+[2075000] Instruction number:          72 | PC: 0048 | Instruction bin: 01101100010011000100110010000011 | Data read 0:         24 | Data read 1:          4 | Immediate:       1732 | Calculated Result:       1756 | Write Back data: 00000000000000000000011011011100
+[2075000] Instruction number:          73 | PC: 0049 | Instruction bin: 01000001101011011110100010110011 | Data read 0:         27 | Data read 1:         26 | Immediate:       1050 | Calculated Result:       1051 | Write Back data: 00000000000000000000000000000000
+[2075000] Instruction number:          74 | PC: 004a | Instruction bin: 01101110111110010010010100000011 | Data read 0:         18 | Data read 1:         15 | Immediate:       1775 | Calculated Result:         33 | Write Back data: 00000000000000000000000000100001
+[2075000] Instruction number:          75 | PC: 004b | Instruction bin: 11110010001001100000001110010011 | Data read 0:         12 | Data read 1:          2 | Immediate: 4294967074 | Calculated Result: 4294967086 | Write Back data: 00000000000000000000000000000000
+[2075000] Instruction number:          76 | PC: 004c | Instruction bin: 11001100010101100011111100010011 | Data read 0:         12 | Data read 1:          5 | Immediate: 4294966469 | Calculated Result:          1 | Write Back data: 00000000000000000000000000000001
+[2075000] Instruction number:          77 | PC: 004d | Instruction bin: 01000001101001000100101000110011 | Data read 0:          8 | Data read 1:         26 | Immediate:       1050 | Calculated Result:       1042 | Write Back data: 00000000000000000000010000010010
+[2075000] Instruction number:          78 | PC: 004e | Instruction bin: 00000000101001101011000010110011 | Data read 0:         13 | Data read 1:         10 | Immediate:         10 | Calculated Result:          0 | Write Back data: 00000000000000000000000000000000
+[2075000] Instruction number:          79 | PC: 004f | Instruction bin: 00011010001111100000111110000011 | Data read 0:         28 | Data read 1:          3 | Immediate:        419 | Calculated Result:         31 | Write Back data: 00000000000000000000000000011111
+[2075000] Instruction number:          80 | PC: 0050 | Instruction bin: 11111111010011000010111000000011 | Data read 0:         24 | Data read 1:         20 | Immediate: 4294967284 | Calculated Result:         12 | Write Back data: 00000000000000000000000000000000
+[2075000] Instruction number:          81 | PC: 0051 | Instruction bin: 11001000100101001110000110010011 | Data read 0:          9 | Data read 1:          9 | Immediate: 4294966409 | Calculated Result: 4294966409 | Write Back data: 00000000000000000000000000000000
+[2075000] Instruction number:          82 | PC: 0052 | Instruction bin: 00010011000101100000000010010011 | Data read 0:         12 | Data read 1:         17 | Immediate:        305 | Calculated Result:        317 | Write Back data: 00000000000000000000000100111101
+[2075000] Instruction number:          83 | PC: 0053 | Instruction bin: 10101010100011111100010110010011 | Data read 0:         31 | Data read 1:          8 | Immediate: 4294965928 | Calculated Result: 4294965943 | Write Back data: 11111111111111111111101010110111
+[2075000] Instruction number:          84 | PC: 0054 | Instruction bin: 10011100111110100100101010010011 | Data read 0:         20 | Data read 1:         15 | Immediate: 4294965711 | Calculated Result: 4294965723 | Write Back data: 11111111111111111111100111011011
+[2075000] Instruction number:          85 | PC: 0055 | Instruction bin: 01110111111111001001101000010011 | Data read 0:         25 | Data read 1:         31 | Immediate:       1919 | Calculated Result:          0 | Write Back data: 00000000000000000000000000000000
+[2075000] Instruction number:          86 | PC: 0056 | Instruction bin: 11110010010100010101010000000011 | Data read 0:          2 | Data read 1:          5 | Immediate: 4294967077 | Calculated Result:          7 | Write Back data: 00000000000000000000000000000111
+[2075000] Instruction number:          87 | PC: 0057 | Instruction bin: 00000001100111000011010110110011 | Data read 0:         24 | Data read 1:         25 | Immediate:         25 | Calculated Result:          1 | Write Back data: 00000000000000000000000000000000
+[2075000] Instruction number:          88 | PC: 0058 | Instruction bin: 00010101000001010101011010000011 | Data read 0:         10 | Data read 1:         16 | Immediate:        336 | Calculated Result:         26 | Write Back data: 00000000000000000000000000011010
+[2075000] Instruction number:          89 | PC: 0059 | Instruction bin: 01000001000100110010010110110011 | Data read 0:          6 | Data read 1:         17 | Immediate:       1041 | Calculated Result:          1 | Write Back data: 00000000000000000000000000000000
+[2075000] Instruction number:          90 | PC: 005a | Instruction bin: 00000001001101010011010100110011 | Data read 0:         10 | Data read 1:         19 | Immediate:         19 | Calculated Result:          1 | Write Back data: 00000000000000000000000000000001
+[2075000] Instruction number:          91 | PC: 005b | Instruction bin: 01000001011000111101011100110011 | Data read 0:          7 | Data read 1:         22 | Immediate:       1046 | Calculated Result:          0 | Write Back data: 00000000000000000000000000000000
+[2075000] Instruction number:          92 | PC: 005c | Instruction bin: 01000000101001000110001100110011 | Data read 0:          8 | Data read 1:         10 | Immediate:       1034 | Calculated Result:         10 | Write Back data: 00000000000000000000000000001010
+[2075000] Instruction number:          93 | PC: 005d | Instruction bin: 00000000100110100101111110110011 | Data read 0:         20 | Data read 1:          9 | Immediate:          9 | Calculated Result:          0 | Write Back data: 00000000000000000000000000000000
+[2075000] Instruction number:          94 | PC: 005e | Instruction bin: 00110111111110010101111100010011 | Data read 0:         18 | Data read 1:         31 | Immediate:        895 | Calculated Result:          0 | Write Back data: 00000000000000000000000000000000
+[2075000] Instruction number:          95 | PC: 005f | Instruction bin: 00100100101101010010001100000011 | Data read 0:         10 | Data read 1:         11 | Immediate:        587 | Calculated Result:         21 | Write Back data: 00000000000000000000000000010101
+[2075000] Instruction number:          96 | PC: 0060 | Instruction bin: 00000001010111110011101010110011 | Data read 0:         30 | Data read 1:         21 | Immediate:         21 | Calculated Result:          0 | Write Back data: 00000000000000000000000000000000
+[2075000] Instruction number:          97 | PC: 0061 | Instruction bin: 10010001010011010001010000000011 | Data read 0:         26 | Data read 1:         20 | Immediate: 4294965524 | Calculated Result:         46 | Write Back data: 00000000000000000000000000101110
+[2075000] Instruction number:          98 | PC: 0062 | Instruction bin: 11100001010110101010100110000011 | Data read 0:         21 | Data read 1:         21 | Immediate: 4294966805 | Calculated Result: 4294966826 | Write Back data: 00000000000000000000000000000000
+[2075000] Instruction number:          99 | PC: 0063 | Instruction bin: 10101111010111100001110000010011 | Data read 0:         28 | Data read 1:         21 | Immediate: 4294966005 | Calculated Result:          0 | Write Back data: 00000000000000000000000000000000
+[2075000] Instruction number:         100 | PC: 0064 | Instruction bin: 01000001011111001100001010110011 | Data read 0:         25 | Data read 1:         23 | Immediate:       1047 | Calculated Result:         14 | Write Back data: 00000000000000000000000000001110
+[2075000] Processing instruction number:           0
+Error:           1Error: [2075000] Check fail with instruction: 00000100101011111111000000010011
+Time: 2075 ns  Iteration: 2  Process: /$unit_Agent_sv_3924725293/Checker::checking  Scope: $unit_Agent_sv_3924725293.Checker::checking  File: D:/Sem2Year3/Redemption/RISC_V_PIPELINE/RISC_V_PIPELINE.srcs/sim_1/new/Checker.sv Line: 79
+[2075000] Mismatch PC - Expected PC:    0 - Instruction PC:     1

@@ -48,8 +48,8 @@ module Memory_Access#(
     reg [DATA_WIDTH - 1:0] ExeResult_WB;
     reg [DATA_WIDTH - 1:0] PC4_WB;
     reg [DATA_WIDTH - 1:0] DataR_WB;
-    always@(posedge clk or negedge reset) begin
-        if(!reset) begin
+    always@(posedge clk or posedge reset) begin
+        if(reset) begin
             ExeResult_WB <= 0;
             PC4_WB <= 0;
             DataR_WB <= 0;

@@ -53,31 +53,31 @@ module Top_Binding(
     
     always_ff @(rsc_io_A.RISCV_cb) begin
     //IF_ID
-    rsc_io_A.Top_PCSel = PCSel;
-    rsc_io_A.Top_RegWEn = RegWEn;
-    rsc_io_A.Top_ASel = ASel;
-    rsc_io_A.Top_BSel = BSel;
-    rsc_io_A.Top_MemRW = MemRW;
-    rsc_io_A.Top_WBSel = WBSel;
+    rsc_io_A.Top_PCSel <= PCSel;
+    rsc_io_A.Top_RegWEn <= RegWEn;
+    rsc_io_A.Top_ASel <= ASel;
+    rsc_io_A.Top_BSel <= BSel;
+    rsc_io_A.Top_MemRW <= MemRW;
+    rsc_io_A.Top_WBSel <= WBSel;
     //ID_Exe
-    rsc_io_A.Top_PCSel_Exe = PCSel_Exe;
-    rsc_io_A.Top_RegWEn_Exe = RegWEn_Exe;
-    rsc_io_A.Top_ASel_Exe = ASel_Exe;
-    rsc_io_A.Top_BSel_Exe = BSel_Exe;
-    rsc_io_A.Top_MemRW_Exe = MemRW_Exe;
-    rsc_io_A.Top_WBSel_Exe = WBSel_Exe;
+    rsc_io_A.Top_PCSel_Exe <= PCSel_Exe;
+    rsc_io_A.Top_RegWEn_Exe <= RegWEn_Exe;
+    rsc_io_A.Top_ASel_Exe <= ASel_Exe;
+    rsc_io_A.Top_BSel_Exe <= BSel_Exe;
+    rsc_io_A.Top_MemRW_Exe <= MemRW_Exe;
+    rsc_io_A.Top_WBSel_Exe <= WBSel_Exe;
     //Exe_MA
-    rsc_io_A.Top_PCSel_MA = PCSel_MA;
-    rsc_io_A.Top_RegWEn_MA = RegWEn_MA;
-    rsc_io_A.Top_MemRW_MA = MemRW_MA;
-    rsc_io_A.Top_WBSel_MA = WBSel_MA;
+    rsc_io_A.Top_PCSel_MA <= PCSel_MA;
+    rsc_io_A.Top_RegWEn_MA <= RegWEn_MA;
+    rsc_io_A.Top_MemRW_MA <= MemRW_MA;
+    rsc_io_A.Top_WBSel_MA <= WBSel_MA;
     //MA_WB
-    rsc_io_A.Top_PCSel_WB = PCSel_WB;
-    rsc_io_A.Top_RegWEn_WB = RegWEn_WB;
-    rsc_io_A.Top_WBSel_WB = WBSel_WB;
+    rsc_io_A.Top_PCSel_WB <= PCSel_WB;
+    rsc_io_A.Top_RegWEn_WB <= RegWEn_WB;
+    rsc_io_A.Top_WBSel_WB <= WBSel_WB;
     //WB_IF
-    rsc_io_A.Top_PCSel_IF = PCSel_IF;
-    rsc_io_A.Top_RegWEn_IF = RegWEn_IF;
+    rsc_io_A.Top_PCSel_IF <= PCSel_IF;
+    rsc_io_A.Top_RegWEn_IF <= RegWEn_IF;
     end
 endmodule
 `endif

@@ -58,7 +58,7 @@ module Controller#(
         .start(start),
         .instruction(instruction),
         .ImmSel(ImmSel),
-        .RegWEn(RegWen),
+        .RegWEn(RegWEn),
         .BrUn(BrUn),
         .is_Br(is_Br),
         .ASel(ASel),
@@ -76,8 +76,8 @@ module Controller#(
         .instruction(instruction),
         .PCSel(PCSel)
     );
-    always@(posedge clk or negedge reset) begin
-        if(!reset) begin
+    always@(posedge clk or posedge reset) begin
+        if(reset) begin
             is_ALU_ff <= 0;
             instruction_ALU <= 0;
         end

@@ -33,20 +33,27 @@ typedef class RISCV_OUTPUTS;
 //} instr_num;
 class Checker;
     string name;
-    int run_for_n_instructions;
-    OPS_mbox in_box;
+    OPS_mbox in_box = new();
+    event start_e;
     
-    extern function new(string name ="Checker", int run_for_n_instructions = 64, OPS_mbox in_box = null);
-    extern function void checking();
+    extern function new(string name ="Checker", OPS_mbox in_box = null, event start_e);
+    extern task checking();
+    extern task dump_mems_to_file();
     extern function bit is_success (RISCV_OUTPUTS OP2T, logic [31:0] IMem [0:1023], logic [31:0] Reg_mem[0:31], logic [31:0] Dmem [0:65535], bit [$clog2(1024) - 1: 0] IMem_address);
 //    extern function void display(RISCV_OUTPUTS OP2T, bit mode, A, B, C);
 endclass:Checker
-    function Checker::new(string name, int run_for_n_instructions, OPS_mbox in_box);
+    function Checker::new(string name, OPS_mbox in_box, event start_e);
         this.name = name;
-        this.run_for_n_instructions = run_for_n_instructions;
         this.in_box = in_box;
+        this.start_e = start_e;
     endfunction: new
-    function void Checker::checking();
+    task Checker::dump_mems_to_file();
+        @(this.start_e);
+        $root.RISCV_test_top.DUT.DTPH.ins_Fetch.Instruction_mem.dump_mem_to_file();
+        $root.RISCV_test_top.DUT.DTPH.RF.dump_mem_to_file();
+        $root.RISCV_test_top.DUT.DTPH.MA_WB.DMEM.dump_mem_to_file();
+    endtask:dump_mems_to_file
+    task Checker::checking();
 //        this.status = 2'b01;
         RISCV_OUTPUTS OP2T = new(0);
         logic [31:0] mem [0:1023];
@@ -55,21 +62,24 @@ endclass:Checker
         bit [$clog2(1024) - 1: 0] IMem_address;
         bit checking_1_inst;
         bit display_mode = 0;
-        bit [6:0] opcode = OP2T.instruction[6:0];
-        bit [2:0] funct3 = OP2T.instruction[14:12];
+        bit [6:0] opcode;
+        bit [2:0] funct3;
         $readmemb("IMEM_expose.mem",mem);
         $readmemb("REGFILE_expose.mem",reg_mem);
         $readmemb("DMEM_expose.mem",dmem);
         forever begin
-            if(!in_box.try_get(OP2T)) break;
+            this.in_box.get(OP2T);
+            opcode = OP2T.instruction[6:0];
+            funct3 = OP2T.instruction[14:12];
             if(OP2T.Current_PC == IMem_address) begin
+                $display("[%0t] Processing instruction number: %d", $time, OP2T.ID);
                 checking_1_inst = this.is_success(OP2T, mem, reg_mem, dmem, IMem_address);
-                if(checking_1_inst == null) break;
-                else if (!checking_1_inst) begin
+                if (!checking_1_inst) begin
                     if(opcode == 7'b1100011) IMem_address += 1; 
                     else $error(1, "[%0t] Check fail with instruction: %b", $time, OP2T.instruction);
                 end
                 else begin
+                    $display("[%0t] Instruction: %d successfully executed", $time, OP2T.ID);
                     if(opcode == 7'b0110011 || opcode == 7'b0010011 || opcode == 7'b0000011 || opcode == 7'b1100111 || opcode == 7'b0110111 || opcode == 7'b0010111) begin
                         reg_mem[OP2T.instruction[11:7]] = OP2T.WB_Output;
                         if(opcode == 7'b1100111) IMem_address = OP2T.ALU_Result;
@@ -93,7 +103,7 @@ endclass:Checker
                 break;
             end
         end
-    endfunction:checking
+    endtask:checking
     function bit Checker::is_success(RISCV_OUTPUTS OP2T, logic [31:0] IMem [0:1023], logic [31:0] Reg_mem[0:31], logic [31:0] Dmem [0:65535], bit [$clog2(1024) - 1: 0] IMem_address);
         bit display_mode = 0;
         bit [6:0] opcode = OP2T.instruction[6:0];
@@ -102,7 +112,7 @@ endclass:Checker
             $display("[%0t] instruction doesn't match, Receive instruction: %b, Expected instruction: %b", $time, OP2T.instruction, IMem[IMem_address]);
             return 0;
         end
-        if(opcode == 7'b0110011 || (opcode == 7'b0010011 && (funct3 == 001 || funct3 == 101))) begin
+        else if(opcode == 7'b0110011 || (opcode == 7'b0010011 && (funct3 == 3'b001 || funct3 == 3'b101))) begin
             logic [6:0] funct7 = OP2T.instruction[31:25];
             logic [31:0] A = Reg_mem[OP2T.instruction[19:15]];
             logic [31:0] B = Reg_mem[OP2T.instruction[24:20]];
@@ -139,19 +149,37 @@ endclass:Checker
             logic [31:0] B = {{21{OP2T.instruction[31]}}, OP2T.instruction[30:20]};
             logic [31:0] C;
             case(funct3)
-                3'b000: C = A + B;
-                3'b010: C = ($signed(A) < $signed(B)) ? 1 : 0;
-                3'b011: C = (A < B) ? 1 : 0;
-                3'b100: C = A ^ B;
-                3'b110: C = A | B;
-                3'b111: C = A & B;
+                3'b000: begin
+                    C = A + B;
+                    if(OP2T.data_r_0 != A || OP2T.imm_out != B || OP2T.ALU_Result != C || OP2T.WB_Output != C) return 0;
+                    else return 1; 
+                end
+                3'b010: begin
+                    C = ($signed(A) < $signed(B)) ? 1 : 0;
+                    if(OP2T.data_r_0 != A || OP2T.imm_out != B || OP2T.ALU_Result != C || OP2T.WB_Output != C) return 0;
+                    else return 1; 
+                end
+                3'b011: begin 
+                    C = (A < B) ? 1 : 0;
+                    if(OP2T.data_r_0 != A || OP2T.imm_out != B || OP2T.ALU_Result != C || OP2T.WB_Output != C) return 0;
+                    else return 1;
+                end 
+                3'b100: begin 
+                    C = A ^ B;
+                    if(OP2T.data_r_0 != A || OP2T.imm_out != B || OP2T.ALU_Result != C || OP2T.WB_Output != C) return 0;
+                    else return 1;
+                end 
+                3'b110: begin
+                    C = A | B;
+                    if(OP2T.data_r_0 != A || OP2T.imm_out != B || OP2T.ALU_Result != C || OP2T.WB_Output != C) return 0;
+                    else return 1; 
+                end
+                3'b111: begin 
+                    C = A & B;
+                    if(OP2T.data_r_0 != A || OP2T.imm_out != B || OP2T.ALU_Result != C || OP2T.WB_Output != C) return 0;
+                    else return 1;
+                end 
             endcase
-            if(OP2T.data_r_0 != A || OP2T.imm_out != B || OP2T.ALU_Result != C || OP2T.WB_Output != C) begin
-                return 0;
-            end
-            else begin
-                return 1;
-            end 
         end
         else if(opcode == 7'b0100011) begin
             logic [31:0] A = Reg_mem[OP2T.instruction[19:15]];
@@ -159,41 +187,49 @@ endclass:Checker
             logic [31:0] imm = {{21{OP2T.instruction[31]}}, OP2T.instruction[30:25], OP2T.instruction[11:7]};
             logic [31:0] Data;
             if(OP2T.data_r_0 == A && OP2T.data_r_1 == B && OP2T.ALU_Result == A + imm && OP2T.imm_out == imm) begin
-                if(funct3 == 3'b000) Data = {24'b0, B[7:0]};
-                else if(funct3 == 3'b001) Data = {16'b0, B[15:0]};
-                else if(funct3 == 3'b010) Data = B;
-                if(OP2T.WB_Output != Data) begin
-                    return 0;
+                if(funct3 == 3'b000) begin
+                    Data = {24'b0, B[7:0]};
+                    if(OP2T.WB_Output != Data) return 0;
+                    else return 1;
                 end
-                else begin
-                    return 1;
-                end 
+                else if(funct3 == 3'b001) begin 
+                    Data = {16'b0, B[15:0]};
+                    if(OP2T.WB_Output != Data) return 0;
+                    else return 1; 
+                end
+                else if(funct3 == 3'b010) begin
+                    Data = B;
+                    if(OP2T.WB_Output != Data) return 0;
+                    else return 1; 
+                end
+                else return 0;
             end
-            else begin
-                return 0;
-            end
+            else return 0;
         end
         else if(opcode == 7'b0000011) begin
             logic [31:0] A = Reg_mem[OP2T.instruction[19:15]];
-            logic [31:0] B = Reg_mem[OP2T.instruction[12:9]];
             logic [31:0] imm = {{21{OP2T.instruction[31]}}, OP2T.instruction[30:20]};
             logic [31:0] Data = Dmem[A + imm];
-            if(OP2T.data_r_0 == A && OP2T.data_r_1 == B && OP2T.imm_out == imm) begin
+            if(OP2T.data_r_0 == A && OP2T.imm_out == imm) begin
                 if(funct3 == 3'b000 || funct3 == 3'b100) begin
                     Data = {24'b0, Data[7:0]};
+                    if(OP2T.WB_Output != Data) return 0;
+                    else return 1;
                 end
                 else if(funct3 == 3'b001 || funct3 == 3'b101) begin
                     Data = {16'b0, Data[15:0]};
-                end
-                if(OP2T.WB_Output != Data) begin
+                    if(OP2T.WB_Output != Data) return 0;
+                    else return 1;
+                end 
+                else begin
+                    $display("funct3 undefined: %b", funct3);
                     return 0;
                 end
-                else begin
-                    return 1;
-                end 
             end
             else begin
-                return 1;
+                $display("Expected data read 0: %d | Received data read 0: %d", A, OP2T.data_r_0);
+                $display("Expected immediate: %d | Received immediate: %d", imm, OP2T.imm_out);
+                return 0;
             end
         end
         else if(opcode == 7'b1100011) begin
@@ -220,7 +256,7 @@ endclass:Checker
                     end
                 end
                 else if(funct3 == 3'b101 || funct3 == 3'b111) begin
-                   if(funct3 == 3'b100) begin
+                   if(funct3 == 3'b101) begin
                         if($signed(A) >= $signed(B)) return 1;
                         else return 0; 
                     end
@@ -266,6 +302,10 @@ endclass:Checker
                 $fatal(1, "[%0t] Branch check fail with instruction: %b", $time, OP2T.instruction);
                 return 0;
             end
+        end
+        else begin 
+            $display("Instruction type not found");
+            return 0;
         end
     endfunction: is_success
 //    function void Checker::display(RISCV_OUTPUTS OP2T, bit mode, A, B, C);

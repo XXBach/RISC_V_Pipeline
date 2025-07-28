@@ -25,19 +25,21 @@ typedef class RISCV_OUTPUTS;
 typedef mailbox #(RISCV_OUTPUTS) OPS_mbox; 
 class Monitor;
     virtual RISCV_IO.Test rsc_io;
+    event start_e;
     string name;
     bit [1:0] status;
     int run_for_n_instructions;
     OPS_mbox out_box = new();
     
-    extern function new(string name = "Monitor", virtual RISCV_IO.Test rsc_io = null, int run_for_n_instructions);
+    extern function new(string name = "Monitor", virtual RISCV_IO.Test rsc_io = null, int run_for_n_instructions, event start_e);
     extern task Start();
     extern function void display();
 endclass: Monitor
-    function Monitor::new(string name, virtual RISCV_IO.Test rsc_io, int run_for_n_instructions);
+    function Monitor::new(string name, virtual RISCV_IO.Test rsc_io, int run_for_n_instructions, event start_e);
         this.name = name;
         this.rsc_io = rsc_io;
         this.run_for_n_instructions = run_for_n_instructions;
+        this.start_e = start_e;
     endfunction: new
     
     task Monitor::Start();
@@ -50,41 +52,88 @@ endclass: Monitor
         logic [31:0] WB_Output_2P[$];
         RISCV_OUTPUTS opt = new(0);
         RISCV_OUTPUTS opt2C;
-        for(int i = 0; i <= run_for_n_instructions; i++) begin
+        
+        @(this.start_e);
+        @(rsc_io.RISCV_cb);
+        PC2P.push_front(rsc_io.RISCV_cb.Current_PC);
+        instruction2P.push_front(rsc_io.RISCV_cb.instruction);
+        this.status = 2'b00;
+        this.display();
+        @(rsc_io.RISCV_cb);
+        PC2P.push_front(rsc_io.RISCV_cb.Current_PC);
+        instruction2P.push_front(rsc_io.RISCV_cb.instruction);
+        data_r_0_2P.push_front(rsc_io.RISCV_cb.data_r_0);
+        data_r_1_2P.push_front(rsc_io.RISCV_cb.data_r_1);
+        imm_out2P.push_front(rsc_io.RISCV_cb.imm_out);
+        this.status = 2'b01;
+        this.display();
+        @(rsc_io.RISCV_cb);
+        PC2P.push_front(rsc_io.RISCV_cb.Current_PC);
+        instruction2P.push_front(rsc_io.RISCV_cb.instruction);
+        data_r_0_2P.push_front(rsc_io.RISCV_cb.data_r_0);
+        data_r_1_2P.push_front(rsc_io.RISCV_cb.data_r_1);
+        imm_out2P.push_front(rsc_io.RISCV_cb.imm_out);
+        ALU_Result_2P.push_front(rsc_io.RISCV_cb.ALU_Result);
+        this.status = 2'b10;
+        this.display();
+        @(rsc_io.RISCV_cb);
+        PC2P.push_front(rsc_io.RISCV_cb.Current_PC);
+        instruction2P.push_front(rsc_io.RISCV_cb.instruction);
+        data_r_0_2P.push_front(rsc_io.RISCV_cb.data_r_0);
+        data_r_1_2P.push_front(rsc_io.RISCV_cb.data_r_1);
+        imm_out2P.push_front(rsc_io.RISCV_cb.imm_out);
+        ALU_Result_2P.push_front(rsc_io.RISCV_cb.ALU_Result);
+        @(rsc_io.RISCV_cb);
+        PC2P.push_front(rsc_io.RISCV_cb.Current_PC);
+        instruction2P.push_front(rsc_io.RISCV_cb.instruction);
+        data_r_0_2P.push_front(rsc_io.RISCV_cb.data_r_0);
+        data_r_1_2P.push_front(rsc_io.RISCV_cb.data_r_1);
+        imm_out2P.push_front(rsc_io.RISCV_cb.imm_out);
+        ALU_Result_2P.push_front(rsc_io.RISCV_cb.ALU_Result);
+        WB_Output_2P.push_front(rsc_io.RISCV_cb.WB_Output);
+        for(int i = 4; i < this.run_for_n_instructions; i++) begin
             @(rsc_io.RISCV_cb);
             PC2P.push_front(rsc_io.RISCV_cb.Current_PC);
             instruction2P.push_front(rsc_io.RISCV_cb.instruction);
-            this.status = 2'b00;
-            this.display();
-            @(rsc_io.RISCV_cb);
             data_r_0_2P.push_front(rsc_io.RISCV_cb.data_r_0);
             data_r_1_2P.push_front(rsc_io.RISCV_cb.data_r_1);
             imm_out2P.push_front(rsc_io.RISCV_cb.imm_out);
-            this.status = 2'b01;
-            this.display();
-            @(rsc_io.RISCV_cb);
             ALU_Result_2P.push_front(rsc_io.RISCV_cb.ALU_Result);
-            this.status = 2'b10;
-            this.display();
-            repeat(2)@(rsc_io.RISCV_cb);
             WB_Output_2P.push_front(rsc_io.RISCV_cb.WB_Output);
             this.status = 2'b11;
             this.display();
-            if(i >= 5) begin
-                opt.ID = i - 5;
-                opt.Current_PC = PC2P.pop_back();
-                opt.instruction = instruction2P.pop_back();
-                opt.data_r_0 = data_r_0_2P.pop_back();
-                opt.data_r_1 = data_r_1_2P.pop_back();
-                opt.imm_out = imm_out2P.pop_back();
-                opt.ALU_Result = ALU_Result_2P.pop_back();
-                opt.WB_Output = WB_Output_2P.pop_back();
-                opt2C = new(i - 5);
-                opt2C = opt.copy();
-                opt2C.display();
-                out_box.put(opt2C);
-            end
-            else continue;
+        end
+        @(rsc_io.RISCV_cb);
+        data_r_0_2P.push_front(rsc_io.RISCV_cb.data_r_0);
+        data_r_1_2P.push_front(rsc_io.RISCV_cb.data_r_1);
+        imm_out2P.push_front(rsc_io.RISCV_cb.imm_out);
+        ALU_Result_2P.push_front(rsc_io.RISCV_cb.ALU_Result);
+        WB_Output_2P.push_front(rsc_io.RISCV_cb.WB_Output);
+        @(rsc_io.RISCV_cb);
+        ALU_Result_2P.push_front(rsc_io.RISCV_cb.ALU_Result);
+        WB_Output_2P.push_front(rsc_io.RISCV_cb.WB_Output);
+        @(rsc_io.RISCV_cb);
+        WB_Output_2P.push_front(rsc_io.RISCV_cb.WB_Output);
+        this.status = 2'b01;
+        this.display();
+        @(rsc_io.RISCV_cb);
+        WB_Output_2P.push_front(rsc_io.RISCV_cb.WB_Output);
+        this.status = 2'b00;
+        this.display();
+        
+        for(int j = 0; j <= this.run_for_n_instructions; j++) begin
+            opt.ID = j;
+            opt.Current_PC = PC2P.pop_back();
+            opt.instruction = instruction2P.pop_back();
+            opt.data_r_0 = data_r_0_2P.pop_back();
+            opt.data_r_1 = data_r_1_2P.pop_back();
+            opt.imm_out = imm_out2P.pop_back();
+            opt.ALU_Result = ALU_Result_2P.pop_back();
+            opt.WB_Output = WB_Output_2P.pop_back();
+            opt2C = new(j);
+            opt2C = opt.copy();
+            opt2C.display();
+            out_box.put(opt2C);
         end
     endtask: Start
     

@@ -55,6 +55,7 @@ endclass: Generator
 function Generator::new(string name, int run_for_n_instructions);
     this.name = name;
     this.run_for_n_instructions = run_for_n_instructions;
+    this.out_box = new(run_for_n_instructions);
 endfunction: new
 
 function void Generator::display(int instruction_n);
@@ -63,7 +64,6 @@ function void Generator::display(int instruction_n);
 endfunction: display
 
 task Generator::start();
-    out_box = new(run_for_n_instructions);
     for(int i = 0; i <= run_for_n_instructions; i++) begin
         if(i == run_for_n_instructions) status = 1;
         else status = 0;
@@ -81,6 +81,7 @@ task Generator::start();
                 R_Transact.randomize();
                 instruction = new(i,R_Transact.instruction, instruction_Type.instr_Type);
                 instr_mb = instruction.copy();
+                instr_mb.display();
                 out_box.put(instr_mb);               
             end
             1: begin
@@ -92,6 +93,7 @@ task Generator::start();
                 I_Transact.randomize();
                 instruction = new(i,I_Transact.instruction, instruction_Type.instr_Type);
                 instr_mb = instruction.copy();
+                instr_mb.display();
                 out_box.put(instr_mb);               
             end
             2: begin
@@ -103,6 +105,7 @@ task Generator::start();
                 S_Transact.randomize();
                 instruction = new(i,S_Transact.instruction, instruction_Type.instr_Type);
                 instr_mb = instruction.copy();
+                instr_mb.display();
                 out_box.put(instr_mb);               
             end
             3: begin
@@ -114,6 +117,7 @@ task Generator::start();
                 B_Transact.randomize();
                 instruction = new(i,B_Transact.instruction, instruction_Type.instr_Type);
                 instr_mb = instruction.copy();
+                instr_mb.display();
                 out_box.put(instr_mb);               
             end
             4: begin
@@ -125,6 +129,7 @@ task Generator::start();
                 J_Transact.randomize();
                 instruction = new(i,J_Transact.instruction, instruction_Type.instr_Type);
                 instr_mb = instruction.copy();
+                instr_mb.display();
                 out_box.put(instr_mb);               
             end
             5: begin
@@ -136,6 +141,7 @@ task Generator::start();
                 UI_Transact.randomize();
                 instruction = new(i,UI_Transact.instruction, instruction_Type.instr_Type);
                 instr_mb = instruction.copy();
+                instr_mb.display();
                 out_box.put(instr_mb);               
             end
             6: begin
@@ -147,6 +153,7 @@ task Generator::start();
                 JALR_Transact.randomize();
                 instruction = new(i,JALR_Transact.instruction, instruction_Type.instr_Type);
                 instr_mb = instruction.copy();
+                instr_mb.display();
                 out_box.put(instr_mb);               
             end
             default: begin
@@ -220,5 +227,8 @@ class instr;
         instr i2C = new(this.ID, this.instruction, this.instr_Type);
         return i2C;
     endfunction: copy
+    function void display();
+        $display("[%0t] | ID: %d | Instruction Generated: %b", $time, this.ID, this.instruction);
+    endfunction: display
 endclass: instr
 `endif

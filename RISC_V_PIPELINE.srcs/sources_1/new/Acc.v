@@ -23,10 +23,12 @@
 module Acc#(
     parameter DATA_WIDTH = 32
 )(
+    input wire loaded,
     input wire [DATA_WIDTH - 1:0] data_in,
     output reg [DATA_WIDTH - 1:0] accumulated_data
     );
     always@(*) begin
-        accumulated_data = data_in + 1;
+        if(!loaded) accumulated_data = data_in;
+        else accumulated_data = data_in + 1;
     end
 endmodule

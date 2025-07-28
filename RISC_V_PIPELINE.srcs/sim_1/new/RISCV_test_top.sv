@@ -22,7 +22,6 @@
 `include "RISCV_IO.sv"
 `include "Top_Binding.sv"
 module RISCV_test_top#(
-    parameter Simulation_Cycles = 3000,
     parameter INSTRUCTION_WIDTH = 32,
     parameter OPERATION_NUMS = 16,
     parameter IMM_MODE_NUMS = 8,
@@ -68,7 +67,6 @@ module RISCV_test_top#(
         .clk(System_Clock),
         .reset(RISCV_interface.reset),
         .start(RISCV_interface.start),
-        .IMem_Start(RISCV_interface.IMem_Start),
         .Current_PC(RISCV_interface.Current_PC),
         .instruction(RISCV_interface.instruction),
         .data_r_0(RISCV_interface.data_r_0),

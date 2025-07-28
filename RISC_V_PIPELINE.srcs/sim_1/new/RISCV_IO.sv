@@ -42,7 +42,6 @@ interface RISCV_IO#(
     assign clk = clock;
     logic reset;
     logic start;
-    logic IMem_Start;
     logic [ADDR_WIDTH - 1:0] Current_PC;
     logic [DATA_WIDTH - 1:0] instruction;
     logic [DATA_WIDTH - 1:0] data_r_0;
@@ -83,7 +82,6 @@ interface RISCV_IO#(
         default input #0 output #0;
         output reset;
         output start;
-        output IMem_Start;
         input Current_PC;
         input instruction;
         input data_r_0;
@@ -93,7 +91,7 @@ interface RISCV_IO#(
         input WB_Output;
      endclocking: RISCV_cb
      modport Test(clocking RISCV_cb,output reset);
-     modport DUT(input reset, start, IMem_Start,
+     modport DUT(input reset, start,
                     output Current_PC, instruction, data_r_0,
                     data_r_1, imm_out, ALU_Result, WB_Output);
      modport Assertion (clocking RISCV_cb, output reset, Top_PCSel, Top_RegWEn, Top_ASel, Top_BSel, Top_MemRW, Top_WBSel, Top_PCSel_Exe, Top_RegWEn_Exe, Top_ASel_Exe, Top_BSel_Exe, Top_MemRW_Exe, Top_WBSel_Exe, Top_PCSel_MA, Top_RegWEn_MA, Top_MemRW_MA, Top_WBSel_MA, Top_PCSel_WB, Top_RegWEn_WB, Top_WBSel_WB, Top_PCSel_IF, Top_RegWEn_IF);

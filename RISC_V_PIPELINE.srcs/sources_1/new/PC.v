@@ -25,11 +25,15 @@ module PC#(
 )(
     input wire clk,
     input wire reset,
+    input wire loaded,
     input wire [ADDR_WIDTH - 1:0] Next_Addr,
     output reg [ADDR_WIDTH - 1:0] Current_Addr
     );
     always@(posedge clk or posedge reset) begin
         if(reset) Current_Addr = 0;
-        else Current_Addr = Next_Addr;
+        else begin
+            if(!loaded) Current_Addr = Current_Addr;
+            else Current_Addr = Next_Addr;
+        end
     end
 endmodule

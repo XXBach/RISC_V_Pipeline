@@ -38,7 +38,6 @@ module RISCV#(
     input wire clk,
     input wire reset,
     input wire start,
-    input wire IMem_Start,
     //Output checking
     output wire [ADDR_WIDTH - 1:0] Current_PC,
     output wire [INSTRUCTION_WIDTH - 1:0] instruction,
@@ -61,7 +60,7 @@ module RISCV#(
     wire [$clog2(OPERATION_NUMS) - 1:0] ALU_Sel;
     wire MemRW;
     wire [1:0] WBSel;
-    wire [INSTRUCTION_WIDTH - 1:0] instruction_ctrl;
+    reg [INSTRUCTION_WIDTH - 1:0] instruction_ctrl;
     
     //Controller Initiation
     Controller#(
@@ -94,14 +93,15 @@ module RISCV#(
     reg BSel_Exe;
     reg MemRW_Exe;
     reg [1:0] WBSel_Exe;
-    always@(posedge clk or negedge reset) begin
-        if(!reset) begin
+    always@(posedge clk or posedge reset) begin
+        if(reset) begin
             PCSel_Exe <= 0;
             RegWEn_Exe <= 0;
             ASel_Exe <= 0;
             BSel_Exe <= 0;
             MemRW_Exe <= 0;
             WBSel_Exe <= 0;
+            instruction_ctrl <= 0;
         end
         else begin
             PCSel_Exe <= PCSel;
@@ -110,6 +110,7 @@ module RISCV#(
             BSel_Exe <= BSel;
             MemRW_Exe <= MemRW;
             WBSel_Exe <= WBSel;
+            instruction_ctrl <= instruction;
         end
     end
     
@@ -118,8 +119,8 @@ module RISCV#(
     reg RegWEn_MA;
     reg MemRW_MA;
     reg [1:0] WBSel_MA;
-    always@(posedge clk or negedge reset) begin
-        if(!reset) begin
+    always@(posedge clk or posedge reset) begin
+        if(reset) begin
             PCSel_MA <= 0;
             RegWEn_MA <= 0;
             MemRW_MA <= 0;
@@ -137,8 +138,8 @@ module RISCV#(
     reg PCSel_WB;
     reg RegWEn_WB;
     reg [1:0] WBSel_WB;
-    always@(posedge clk or negedge reset) begin
-        if(!reset) begin
+    always@(posedge clk or posedge reset) begin
+        if(reset) begin
             PCSel_WB <= 0;
             RegWEn_WB <= 0;
             WBSel_WB <= 0;
@@ -153,8 +154,8 @@ module RISCV#(
     //WB_IF ( WBSel is not delayed )
     reg PCSel_IF;
     reg RegWEn_IF;
-    always@(posedge clk or negedge reset) begin
-        if(!reset) begin
+    always@(posedge clk or posedge reset) begin
+        if(reset) begin
             PCSel_IF <= 0;
             RegWEn_IF <= 0;
         end
@@ -178,7 +179,7 @@ module RISCV#(
     ) DTPH (
         .clk(clk),
         .reset(reset),
-        .IMem_Start(IMem_Start),
+        .IMem_Start(start),
         .PCSel(PCSel_IF),
         .ImmSel(ImmSel),
         .RegWEn(RegWEn_IF),

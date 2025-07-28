@@ -32,8 +32,14 @@ module Data_Memory#(
     output reg [DATA_WIDTH - 1:0] DataR
     );
     reg [DATA_WIDTH - 1:0] mem [0:DMEM_DEPTH - 1];
-    always@(posedge clk or negedge reset) begin
-        if(!reset) begin
+    integer i;
+    initial begin
+        for(i = 0; i < DMEM_DEPTH; i = i + 1) begin
+            mem[i] = 0;
+        end
+    end
+    always@(posedge clk or posedge reset) begin
+        if(reset) begin
             DataR <= 0;
         end
         else begin

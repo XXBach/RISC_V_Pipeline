@@ -50,8 +50,8 @@ module Main_Controller#(
         if(( opcode == 7'b0010011 && funct3 == 3'b011 ) || ( opcode == 7'b0000011 && funct3 > 3'b011 ) || ( opcode == 7'b1100011 && funct3 > 3'b101 )) is_U = 1'b1;
         else is_U = 1'b0;
     end  
-    always@(posedge clk or negedge reset) begin
-        if(!reset) begin
+    always@(posedge clk or posedge reset) begin
+        if(reset) begin
             current_state <= 4'b0000;
             ImmSel <= 3'b000;
             RegWEn <= 1'b0;

@@ -35,6 +35,7 @@ module Instruction_Fetch#(
     output wire [INSTRUCTION_WIDTH - 1:0] instruction    
     );
     wire [ADDR_WIDTH - 1:0] next_addr;
+    wire is_loaded;
     Mux2_to_1#(
         .DATA_WIDTH(ADDR_WIDTH)
     )IF_mux(
@@ -48,12 +49,14 @@ module Instruction_Fetch#(
     )Program_Counter(
         .clk(clk),
         .reset(reset),
+        .loaded(is_loaded),
         .Next_Addr(next_addr),
         .Current_Addr(current_addr)
     );
     Acc#(
         .DATA_WIDTH(ADDR_WIDTH)
     )Accumulator(
+        .loaded(is_loaded),
         .data_in(current_addr),
         .accumulated_data(accumulated_addr_op)
     );
@@ -65,6 +68,7 @@ module Instruction_Fetch#(
         .reset(reset),
         .start(IMem_Start),
         .addr(current_addr),
-        .instruction(instruction)
+        .instruction(instruction),
+        .is_loaded(is_loaded)
     );
 endmodule

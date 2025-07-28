@@ -27,7 +27,7 @@ class Driver;
     virtual RISCV_IO.Test rsc_io;
     string name;
     bit [1:0] status;
-    
+    event monitor_event;
     extern function new(string name = "Driver", virtual RISCV_IO.Test rsc_io = null);
     extern task Start(int run_for_n_instructions);
     extern function void display();
@@ -42,7 +42,6 @@ endclass: Driver
         //Phase 1: Reset
         rsc_io.reset <= 0;
         rsc_io.RISCV_cb.start <= 0;
-        rsc_io.RISCV_cb.IMem_Start <= 0;
         this.status = 0;
         this.display();
         @(rsc_io.RISCV_cb);
@@ -52,15 +51,15 @@ endclass: Driver
         repeat(100) @(rsc_io.RISCV_cb);
         rsc_io.reset <= 0;
         //Phase 2: Nap lenh
-        rsc_io.RISCV_cb.IMem_Start <= 1;
+        rsc_io.RISCV_cb.start <= 1;
+        @(rsc_io.RISCV_cb);
         this.status <= 2;
         this.display();
-        repeat(20) @(rsc_io.RISCV_cb);
-        rsc_io.RISCV_cb.IMem_Start <= 0;
+        @(rsc_io.RISCV_cb);
         //Phase 3: Run
-        rsc_io.RISCV_cb.start <= 1;
         this.status <= 3;
         this.display();
+        -> monitor_event;
         repeat(run_for_n_instructions) @(rsc_io.RISCV_cb);
         rsc_io.RISCV_cb.start <= 0;
     endtask: Start

@@ -35,10 +35,11 @@ class I_Type_Transaction;
         opcode inside {7'b0010011, 7'b0000011};
     };
     constraint funct3_cstr {
-        !(funct3 inside {3'b010, 3'b011});
+         (opcode == 7'b0000011) -> funct3 inside {3'b000, 3'b001, 3'b010, 3'b100, 3'b101};
+         (opcode == 7'b0010011) -> funct3 inside {3'b000, 3'b001, 3'b010, 3'b011, 3'b100, 3'b101, 3'b110, 3'b111};
     };
     constraint funct7_cstr {
-        !(funct3 inside {3'b010, 3'b011});
+        !(funct7 inside {7'b0000000, 7'b0100000});
     };
     
     //method prototype

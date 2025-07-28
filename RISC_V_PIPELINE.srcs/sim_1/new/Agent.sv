@@ -23,17 +23,19 @@
 `include "Generator.sv"
 class Agent;
     string name;
+    int run_for_n_instructions;
     Instr_mbox in_box;
     bit status;
     
-    extern function new(string name = "Agent", Instr_mbox in_box);
-    extern function void makefile(string filename = "instruction0.mem");
+    extern function new(string name = "Agent", Instr_mbox in_box, int run_for_n_instructions);
+    extern task makefile(string filename = "instruction0.mem");
     extern function void display();
 endclass:Agent
 
-function Agent::new(string name, Instr_mbox in_box);
+function Agent::new(string name, Instr_mbox in_box, int run_for_n_instructions);
     this.name = name;
     this.in_box = in_box;
+    this.run_for_n_instructions = run_for_n_instructions;
 endfunction: new
     
 function void Agent::display();
@@ -41,23 +43,23 @@ function void Agent::display();
     else $display ("[%0t] Waiting....", $time);
 endfunction: display
     
-function void Agent::makefile(string filename);
+task Agent::makefile(string filename);
     int filedesc;
     instr instruction_to_file;
-    int count = 0;
     this.status = 0;
+    this.display();
     filedesc = $fopen(filename,"w");
     if(filedesc == 0) begin
         $display("[%0t] Cannot open file: %s", $time, filename);
         return;
     end    
-    while (this.in_box.try_get(instruction_to_file)) begin
+    for(int i = 0; i <= this.run_for_n_instructions; i++) begin
+        this.in_box.get(instruction_to_file);
         this.status = 1;
         $fdisplay(filedesc,"%b",instruction_to_file.instruction);
-        count++;
     end    
     $display("[%0t] Instructions successfully saved to file: %s", $time, filename);
-    $fclose(filedesc);
-endfunction: makefile
+    $fclose(filedesc);  
+endtask: makefile
 
 `endif

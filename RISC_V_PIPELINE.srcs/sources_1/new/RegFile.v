@@ -35,13 +35,21 @@ module RegFile#(
     output wire [DATA_WIDTH - 1:0] data_r_1
     );
     reg [DATA_WIDTH - 1:0] mem [0:REGFILE_DEPTH - 1];
+    integer i;
+    //initial for verifying purpose
+    initial begin
+        for(i = 0; i < REGFILE_DEPTH; i = i + 1) begin
+            mem[i] = i;
+        end
+    end
+    // actual design
     always@(posedge clk) begin
         if(wen == 1 && addr_w != 0) mem[addr_w] <= data_w;
         else if(wen == 1 && addr_w == 0) mem[addr_w] <= 0;
     end
     assign data_r_0 = (reset == 1) ? 0 : addr_r_0;
     assign data_r_1 = (reset == 1) ? 0 : addr_r_1;
-    
+    //task for verify purpose
     task dump_mem_to_file();
         integer fd;
         integer i;
